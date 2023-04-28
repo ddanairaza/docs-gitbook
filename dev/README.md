@@ -4,17 +4,17 @@
 
 <mark style="color:red;">**NOTE: Beam Developer Portal is currently under construction and is subject to changes**</mark>
 
-Beam is a scalable and confidential cryptocurrency and DeFi platform implemented from scratch in C++ programming language. Since its inception in 2018, Beam has evolved a lot and is currently a large and complex project.
+Beam is a cryptocurrency and DeFi platform that is both scalable and confidential, designed entirely in C++. Since its inception in 2018, Beam has undergone significant development and growth, and it is now a large and intricate project.
 
-In this developer documentation we will provide information about the development of Beam itself  and Smart Contracts (aka Shaders ) on Beam blockchain.
+This developer portal will provide comprehensive information about the development of both Beam and Smart Contracts (also known as Shaders) on the Beam blockchain but also includes tutorials to assist developers in creating these features.
 
-Before we dive in, here is a short list of essential resources you might need in your journey:
+**Below are some key resources that you may find essential in your journey:**
 
 * [Beam Source Code](https://github.com/BeamMW)
-* [Developer Support Channel on Telegram](https://t.me/beamdevsupport) - for any questions you might have along the way
-* [Building Beam](guides/building-beam.md) - covers the process of building all Beam components from source
+* [Developer Support Channel on Telegram](https://t.me/beamdevsupport): for any questions you might have along the way.
+* [Building Beam](guides/building-beam.md): covers the process of building all Beam components from the source files.
 
-The documentation will cover the following list of topics:
+**Topics covered will include:**
 
 * [Core Technology Overview](./#core-technology-overview)
 * [Confidential Assets](./#confidential-assets)
@@ -24,45 +24,48 @@ The documentation will cover the following list of topics:
 * Desktop Wallet
 * Node
 
-
-
 ### Core Technology Overview
 
-&#x20;Initially, Beam started as an implementation of the [Mimblewimble ](beam-technology/mimblewimble.md)([original whitepaper](https://docs.beam.mw/Mimblewimble.pdf)) protocol and, from version 5.0, added support for a [Lelantus](https://github.com/BeamMW/beam/wiki/Lelantus-MW) shielded pool. This hybrid approach was named [LelantusMW](beam-technology/lelantusmw.md), and it is now powering the Beam Privacy layer one.
+In the beginning, Beam originally was designed as an implementation of the [Mimblewimble ](beam-technology/mimblewimble.md)([original whitepaper](https://docs.beam.mw/Mimblewimble.pdf)) protocol. Since then, Beam version 5.0 included support for a [Lelantus](https://github.com/BeamMW/beam/wiki/Lelantus-MW) shielded pool which became the [LelantusMW](beam-technology/lelantusmw.md) protocol that is the core of Beam's Privacy Layer one.
 
-On the network level, Beam uses Dandelion protocol with non interactive transaction merging along the stem phase. Technical details of the implementation are available [here](https://github.com/BeamMW/beam/wiki/Transaction-graph-obfuscation).&#x20;
+The Beam network uses the [Dandelion protocol](https://blockonomi.com/dandelion-protocol/), merging non-interactive transactions along the stem phase. Additional technical information regarding this implementation can be found [here](https://github.com/BeamMW/beam/wiki/Transaction-graph-obfuscation).&#x20;
 
-One of the unique features of Beam are [Atomic Swaps](beam-technology/atomic-swaps.md). They allow to exchange Beam for Bitcoin, Ethereum and several other currencies without any trusted third party.&#x20;
+**Beam also features:**
 
-Another interesting technology is Laser Beam, which is an implementation of direct payment channels, similar to those used in the Lightning Network.&#x20;
-
-Last but not least is the [SBBS ](beam-technology/sbbs.md)- Secure Bulletin Board System - a decentralized encrypted messaging between Beam wallets, used to create interactive transactions and broadcast information.&#x20;
+* [Atomic Swaps](beam-technology/atomic-swaps.md): Allows the exchange of Beam for Bitcoin, Ethereum, and several other currencies without needing a trusted third party.
+* Laser Beam: A direct payment channel implementation similar to those used in the [Lightning Network](https://lightning.network/).&#x20;
+* Secure Bulletin Board System ([SBBS](beam-technology/sbbs.md)): An encrypted, decentralized messaging system that broadcasts information and creates transactions between Beam wallets.&#x20;
 
 ### Confidential Assets
 
-Beam supports an ability to create new types of assets on the blockchain, called Confidential Assets (CA for short).  Unlike Ethereum ERC-20 tokens, Beam CA do not require Smart Contracts due to a Layer 1 implementation that designates each new asset type as a first-class citizen in Beam nodes.&#x20;
+Beam offers the creation of new asset types on the blockchain called Confidential Assets (CA). Each new CA is designated as a first-class citizen in Beam nodes due to the Layer 1 implementation and does not require using Smart Contracts like Ethereum ERC-20 tokens.&#x20;
 
-This approach has many advantages in both security and privacy. Beam Tokens are **as private as Beam itself** and offer native support with Beam wallets and DAPPs. Confidential Assets can be either emitted manually by a user or controlled by smart contracts within Beam Virtual Machine.
+**This results in Beam tokens offering the same privacy and security as Beam coins** while seamlessly integrating with Beam Wallets and dApps. Confidential Assets can be emitted manually or deployed via Smart Contracts within Beam Virtual Machine.
 
-For more information please refer to the dedicated [Confidential Assets](broken-reference) section of this guide.
+For more information, refer to this guide's dedicated [Confidential Assets](confidential-assets/) section.
 
 ### Beam Shaders
 
-Starting with version 6.0 Beam has added support for Smart Contracts (a.k.a Beam Shaders) by adding a bespoke Beam Virtual Machine (BVM). BVM natively runs WebAssembly binary code while the contracts themselves can be implemented in any programming language that can be compiled into WebAssembly such as C++, Rust or Go.&#x20;
+Beam version 6.0 included a tweaked BVM to offer Smart Contract support, aka Beam Shaders. Beam Shaders offers a flexible Smart Contract development due to the BVM’s native operating of WebAssembly compatible langues, i.e., C++, Rust, Go, etc.
 
-Beam Shaders, BVM and the related tools are collectively called Confidential DeFi Platform and and described in a [dedicated section](broken-reference) of this guide.
-
-
+Beam Shaders, BVM, and all related tools are the pillars of [Beam’s Confidential DeFi Platform](using-beam-shaders.md).
 
 ### Wallet API
 
-Beam provides an extensive wallet API to support integration with exchanges, payment services and third party applications. Unlike most other networks that provide API directly from the node, the fact that Beam is a confidential cryptocurrency requires a wallet with secret keys for most operations. Which is why Beam API is based on top of a Beam wallet code.
+Beam’s robust Wallet API facilitates integration with exchanges, payment services, and third-party applications. While other networks offer APIs directly from the node, Beam API is coded directly into the Beam wallet. Using a wallet and secret keys ensures sensitive information remains secure without compromising integration with the Beam network.
 
-More information about using Wallet API is described in the [Beam wiki](https://github.com/BeamMW/beam/wiki/Beam-wallet-protocol-API).
+For more information regarding Wallet API, refer to this [Beam wiki](https://github.com/BeamMW/beam/wiki/Beam-wallet-protocol-API).
 
 ### Web Wallet
 
+Beam offers a simplified version of the Beam Desktop Wallet in a web wallet metamask that runs in the background of [Google Chrome](https://chrome.google.com/webstore/search/beam). The Beam Web Wallet allows users to store, send and receive Beam coins but does not currently offer Atomic Swaps or dApp support.&#x20;
+
+All wallet balances will be reflected accurately across all devices connected with your seed phrase (Desktop wallet, Mobile wallet, Web Wallet, etc.). However, web wallet metadata is not available for export.&#x20;
+
 ### Desktop Wallet
+
+The Beam Desktop Wallet offers advanced privacy and security features in a user-friendly interface that allows users to hold, send or receive Beam, BeamX coins, and other confidential assets. The desktop wallet ([currently version 7.3](https://beam.mw/downloads/mainnet-mac)) is available on Mac, Windows, and Linux platforms and provides access to Beam’s advanced features like dApps, and Atomic swaps.
 
 ### Node
 
+Beam Node is an essential component of the Beam blockchain. Each individual node creates a peer-to-peer network that validates transactions and blocks on the blockchain. Whether mining or validating nodes, each serves a crucial role in maintaining the integrity of the Beam Network.

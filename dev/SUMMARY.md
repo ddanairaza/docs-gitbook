@@ -12,8 +12,6 @@
 
 ## Beam Platform <a href="#beam-defi" id="beam-defi"></a>
 
-***
-
 * [Beam Platform Architecture](beam-platform-architecture.md)
 * [Confidential Assets](confidential-assets/README.md)
   * [Implementation of Confidential Assets](confidential-assets/implementation-of-confidential-assets.md)
@@ -26,8 +24,6 @@
 
 ## tutorials
 
-***
-
 * [Using Beam Shaders](using-beam-shaders.md)
 * [Shader SDK (WIN)](shader-sdk-win.md)
 * [Shader SDK (MAC)](shader-sdk-mac.md)
@@ -35,8 +31,6 @@
 * [Developing Beam DApp UI](developing-beam-dapp-ui.md)
 
 ## Beam DAPPs <a href="#beam-defi" id="beam-defi"></a>
-
-***
 
 * [Beam DEX](beam-dex.md)
 
