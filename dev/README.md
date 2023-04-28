@@ -4,7 +4,7 @@
 
 <mark style="color:red;">**NOTE: Beam Developer Portal is currently under construction and is subject to changes**</mark>
 
-Beam is a cryptocurrency and DeFi platform that is both scalable and confidential, designed entirely in C++. Since its inception in 2018, Beam has undergone significant development and growth, and it is now a large and intricate project.
+Beam is a confidential, scalable cryptocurrency and DeFi platform designed entirely in C++. Since its inception in 2018, Beam has undergone significant development and growth, becoming a large and intricate project.
 
 This developer portal will provide comprehensive information about the development of both Beam and Smart Contracts (also known as Shaders) on the Beam blockchain but also includes tutorials to assist developers in creating these features.
 
