@@ -62,10 +62,16 @@ Beam offers a simplified version of the Beam Desktop Wallet in a web wallet meta
 
 All wallet balances will be reflected accurately across all devices connected with your seed phrase (Desktop wallet, Mobile wallet, Web Wallet, etc.). However, web wallet metadata is not available for export.&#x20;
 
+Refer to this [web wallet guide](http://localhost:5000/o/-M\_G-3uaAbZMXViHLVZl/s/PPXXGuwTXZfforCZnW03/) for more information on getting started.
+
 ### Desktop Wallet
 
 The Beam Desktop Wallet offers advanced privacy and security features in a user-friendly interface that allows users to hold, send or receive Beam, BeamX coins, and other confidential assets. The desktop wallet ([currently version 7.3](https://beam.mw/downloads/mainnet-mac)) is available on Mac, Windows, and Linux platforms and provides access to Beam’s advanced features like dApps, and Atomic swaps.
 
+Refer to our [desktop wallet guide](http://localhost:5000/o/-M\_G-3uaAbZMXViHLVZl/s/-MaSm2QyXLRMULOUF0cE/) for more information!
+
 ### Node
 
 Beam Node is an essential component of the Beam blockchain. Each individual node creates a peer-to-peer network that validates transactions and blocks on the blockchain. Whether mining or validating nodes, each serves a crucial role in maintaining the integrity of the Beam Network.
+
+Refer to [this guide](http://localhost:5000/o/-M\_G-3uaAbZMXViHLVZl/s/-MahNa0IaGxTr8GkB5rz/) for more information on creating your own node within the Beam network.
