@@ -2,37 +2,37 @@
 
 ## Confidential Assets
 
-Beam Blockchain natively supports creation of new types of tokens called Confidential Assets (abbreviated as CA) \[3]. Confidential Assets inherit all the properties of the Beam Coin (a native token on Beam Blockchain) namely, confidentiality and scalability using cut-through process. Unlike Ethereum ERC20 type contracts, Beam assets are implemented on Layer 1 and are native citizens of Beam ecosystem. Each Beam transaction can simultanieously include any number of different CA types both as inputs and as outputs, provided all inputs and outputs of the same CA type sum to zero, i.e no type conversion can occur within a transaction.
+Beam Blockchain natively supports creating new types of tokens called Confidential Assets (CA) \[3]. Confidential Assets inherit all the properties of the Beam Coin (a native token on Beam Blockchain), namely, confidentiality and scalability using MimbleWimble's cut-through process.
+
+Unlike Ethereum ERC-20 contracts, Beam assets are implemented on Layer 1 and are native citizens of Beam's ecosystem. Each Beam transaction can simultaneously include various CA types as inputs and outputs, provided they match the CA type sum to zero, i.e., no type conversion can occur within a transaction.
 
 ## Transaction Kernels
 
-Each transaction in Beam consists of a set of inputs and outputs which are represented by Pedersed Commitments with adjacent zero knowledge range proofs to make sure commited values are positive and within range. In addition each transaction contains transaction Kernels, which originally contain the signed difference between the blinding factors.
+Beam transactions are comprised of inputs and outputs, which are represented by Pedersen Commitments with adjacent zero-knowledge range proofs to ensure committed values are positive within a specific range. While inputs and outputs can be removed during the cut-through process, transaction kernels remain in the blockchain and are crucial for protocol validation.&#x20;
 
-Unlike inputs and outputs, which can be removed during cut-through process, Kernels forever remain in the blockchain and are essential for validation of the protocol. During Beam development, kernels were exteneded to support several different purposes, such as reflecting transaction type and supporting Lelantus shielded pool. The following extension was added to enable running Smart Contracts on Beam blockchain
+Initially, kernels contained the signed difference between the blinding factors but were extended to support various purposes during Beam's development, including reflecting transaction type and supporting Lelantus shielded pool. Additionally, the kernels were further repurposed to enable the deployment of smart contracts on the Beam blockchain
 
 ## Kernels with Side Effects
 
-A transaction kernel can specify a side effect, i.e explicit change of the node state. Such change can include transformations on the tx inputs and outputs. If the side effect modifies outputs, we say that kernel 'consumes' outputs, and the value stored in those outputs is recorded in the node state. In return, the kernel may 'emit' new inputs using the value stored in the node state. These operations effectively transform Beam into a hybrid UTXO based <> State Based cryptocurrency.
+A transaction kernel can identify any side effects, i.e., direct changes to the node state, including transformations to tx inputs and outputs. When this occurs, Beam coins transform into a hybrid UTXO based <> State Based cryptocurrency. When a side effect modifies the outputs, the value stored records on the blockchain as the kernel "consumed" the output. This results in the kernel "emitting" new inputs using the value stored in the node state.
 
 ## Beam Shaders and Beam Virtual Machine
 
-Node state is encaspsulated witihin Beam Shaders that specify the state variables and business logic for modifying these varaibles. Beam Shaders are implement as WebAssembly\[1] programs that run within Beam Virtual Machine.
+The encapsulation of each node state is done using Beam Shaders while defining the state variables and correlating business logic to modify them. These shaders are coded using WebAssembly (WASM), allowing seamless deployment on Beam Virtual Machines.
 
-WebAssembly (abbreviated Wasm) is a binary instruction format for a stack-based virtual machine. Wasm is designed as a portable compilation target for programming languages, enabling deployment on the web for client and server applications. WebAssembly is a well known industry standard and supports wide variety of programming languages, compilers and development tools.
+Beam uses WASM's binary instruction format for stack-based virtual machines and takes advantage of WASM's industry-standard support for various web for client and server applications.&#x20;
 
-## Using Beam Shaders to implement Smart Contracts
+## Using Beam Shaders to Implement Smart Contracts
 
-For a more technical description of Beam Smart Contracts read here
+For a more technical description of Beam Smart Contracts, read here
 
-According to Wikipedia definition, Smart Contract \[2] is a computer program or a transaction protocol which is intended to automatically execute, control or document legally relevant events and actions according to the terms of a contract or an agreement. Beam Shaders specify implementation of Smart Contracts on the Beam blockchain.
+According to [Investopedia](https://www.investopedia.com/terms/s/smart-contracts.asp), Smart Contracts are _"a self-executing contract with the terms of the agreement between buyer and seller being directly written into lines of code"_ Smart Contracts on the Beam blockchain are executed via Beam Shaders.
 
-Each Beam Shader is defined as a collection of state variables and methods, includng two special methods: a constructor and a destructor
+Each Beam Shader is a collection of state variables and methods, including a constructor and a destructor. The **shader constructer** is only executed once when the Contract Creator defines parameters when registering a new shader. When a new Beam Shader code and construction parameters records on the blockchain, it creates a unique Shader Instance.
 
-Shader Constructor is only run once when the Shader is registered and provides Shader parameters which have to be supplied by the Contract Creator during the process of registering a new Shader.
+It is important to note the same code with different parameters will produce a distinct unique Shader ID, thus creating a separate Shader Instance.
 
-Beam Shader code and a set constructor parameters provide a unique identification of a Shader Instance and are recorded on the blochain. There can be only one such Shader Instance at all times. It is important to note that the same code with a different set of parameters will provide a different unique Shader ID and hence will constitute a different Shader Instance.
-
-A destructor is only run once when the Beam Shader is deactivated and is reponsible for cleaning all used resources. Beam Shader can only be deactivated if it does not hold any funds so that it would not be possible to destroy value during Shader deactivation.
+A **destructor** runs when the Beam Shader is deactivated and cleans all used resources.  ABeam Shader can only be deactivated if it does not contain any funds, preventing the destruction of value during the Shader deactivation process.
 
 ## Properties of Chain Side Beam Shaders
 
