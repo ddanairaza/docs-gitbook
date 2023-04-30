@@ -2,7 +2,7 @@
 
 ## Confidential Assets
 
-Beam Blockchain natively supports creating new types of tokens called Confidential Assets (CA) \[3]. Confidential Assets inherit all the properties of the Beam Coin (a native token on Beam Blockchain), namely, confidentiality and scalability using MimbleWimble's cut-through process.
+Beam Blockchain natively supports creating new types of tokens called Confidential Assets (CA). Confidential Assets inherit all the properties of the Beam Coin (a native token on Beam Blockchain), namely, confidentiality and scalability using MimbleWimble's cut-through process.
 
 Unlike Ethereum ERC-20 contracts, Beam assets are implemented on Layer 1 and are native citizens of Beam's ecosystem. Each Beam transaction can simultaneously include various CA types as inputs and outputs, provided they match the CA type sum to zero, i.e., no type conversion can occur within a transaction.
 
@@ -32,19 +32,19 @@ Each Beam Shader is a collection of state variables and methods, including a con
 
 It is important to note the same code with different parameters will produce a distinct unique Shader ID, thus creating a separate Shader Instance.
 
-A **destructor** runs when the Beam Shader is deactivated and cleans all used resources.  ABeam Shader can only be deactivated if it does not contain any funds, preventing the destruction of value during the Shader deactivation process.
+A **destructor** runs when the Beam Shader is deactivated and cleans all used resources.  A Beam Shader can only be deactivated if it does not contain any funds, preventing the destruction of value during the Shader deactivation process.
 
 ## Properties of Chain Side Beam Shaders
 
-The following section describes the key properties of Beam Chain Side Shaders - i.e Shaders that are deployed on the blockchain are used for the implementation of Smart Contract logic.
+The section below details key properties of smart contract (Beam Chain Side Shaders) implementation on the Beam blockchain.
 
-* Shaders ensure bounded execution time To avoid blocking the node by an unbounded cycle, Beam Shaders implement several limiting mechanisms including charging execution fee for each operation as well as enforcing a maximum execution fee.
-* Shaders can only be invoked by transactions The only way to execute Shader logic is by sending a transaction containing all required parameters and signatures and fees to the blockchain. Beam Shaders can not be invoked in any other automatic or scheduled manner.
-* Shaders can collect fees Most decentralized applications request specific fees collected by the application for the provided services. Shaders can collect, store and distribute such fees, including refunding excess fees to special Vault contracts.
-* Shaders can call other Shaders During their operation Shaders can delegage operations to other Shaders. All operations are performed in the context of the transaction that activated the first Shader in the chain
-* Controlling Assets Shaders have an ability to perform emission ad burning of Confidential Assets that are controlled by the Shader. In this case assets can not be manipulated manually, all emission and burn operations are completely controlled by a transparent Shader logic.
-* Locking and Unlocking Funds In the course of operation, Shader can either lock funds provided as transaction inputs, which are consumed in the process, or unlock funds and return them as transaction outputs that are created and added to the blockchain.
-* Overdraft protection BVM will validate that amount of locked and unlocked funds are equal so that it is not possible to create coins out of thin air, except for legal emission of the Confidential Asset which is always clearly visible on the blockchain.
+* Beam Shaders utilize several limiting mechanisms (charging execution fees, maximum execution fees) to avoid blocking the node with an unbounded cycle and ensure bounded execution time.
+* **Shaders cannot be automated** and only record on the blockchain via sent transactions with required parameters, signatures, and fees.&#x20;
+* Shaders can claim a portion of fees from provided sources of decentralized application requests. Shaders can then store and issue disbursements, including refunding excess payments to special [Vault contracts](https://blog.giveth.io/the-vault-contract-open-sourced-by-giveth-fe2261f7b91b).
+* Shaders can communicate with other Shaders to delegate operations in the transaction context, activating the initial Shader on the chain.
+* The Shader that controls the assets can burn CA emissions, and the shaders defined logic conducts emission burning when manual emission burn cannot function.&#x20;
+* When a Shader deploys, it results in one of two outcomes: either the Shader consumes funds (transaction inputs) or unlocks funds (transaction outputs) recorded on the blockchain.&#x20;
+* Ove**rdraft protection**. BVM only validates equal amounts of locked and unlocked funds to discourage bad actors from creating confidential assets.&#x20;
 
 ## Wallet Side Shaders
 
