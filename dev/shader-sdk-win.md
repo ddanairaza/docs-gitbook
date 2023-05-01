@@ -3,7 +3,7 @@
 In this tutorial we wil show how to setup Beam Shader SDK on Windows OS
 
 {% hint style="warning" %}
-The current version of the Shader SDK can only be kindly described as 'early developer preview'. Expect shitload of weird problems and glitches.
+The Shader SDK's current version can be characterized as an 'early developer preview', with a high possibility of encountering unusual issues and bugs.
 {% endhint %}
 
 ### Prerequisites
