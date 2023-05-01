@@ -46,33 +46,34 @@ Meanwhile, the verifier generates a list of asset generators for the provided ra
 
 ### Asset control
 
-Asset controls grants any user permission to create new asset types vs Beam which are automatically released into circulation with each new block generated. Assets are emitted and burned by the asset owner. The asset lifecycle goes as following:
+Asset controls grants any user permission to create new asset types vs Beam which are automatically released into circulation with each new block generated. Assets are emitted and burned by the asset owner. The asset lifecycle has three stages: Asset creation, asset emission/burn and asset destroying.
 
 #### Asset creation
 
-The user sends a transaction (kernel) that asks to create its asset type. It provides the following:
+When sending an asset creating transaction type, it provides both the **Owner key** and associated **metadata**. Any proceeding asset actions will require a private key signature, and metadata visible to all users is immutable once the asset is created.
 
-* **Owner key** - an arbitrary public key that will be associated with this asset. All further asset actions must be signed by the appropriate private key.
-* **Metadata** - arbitrary data (buffer), visible to all other users. Once asset is created this metadata can't be modified. In addition to this, the user Locks a considerable amount of Beams, i.e. this transaction implicitly consumes this amount. If successful, the system allocates the lowest available (unused) `AssetID`, and associates it with this asset.
+{% hint style="info" %}
+Metadata reserves a significant number of Beams when locking an asset, meaning that this transaction implicitly uses up that amount. If the transaction is successful, the system assigns the lowest available and unused `AssetID` to the asset and links it to the asset.
+{% endhint %}
 
 #### Asset emission/burn
 
-The user sends a special asset emission kernel (emission amount may be either positive or negative). In addition to signing the kernel excess blinding factor (as usual) - it also must be signed by the appropriate private key of the asset owner.
+The user initiates a transaction by sending a unique asset emission kernel, which can have a positive or negative emission amount. To complete the transaction, the kernel excess blinding factor must be signed by the appropriate private key of the asset owner.&#x20;
 
-This transaction implicitly creates/consumes some amount of this asset, which should be compensated by other transaction elements (inputs and outputs).
+This transaction will automatically create or consume a certain amount of the asset, which should be balanced out by other transaction elements such as inputs and outputs.
 
 #### Asset destroying
 
-To destroy an asset the user sends an appropriate asset destruction kernel (signed by the appropriate owner key). After the asset is destroyed - the `AssetID` is no longer associated with the owner, and the user gets the locked Beams back.
+To destroy an asset, an asset destroying kernel with owner key signature is required. Once the asset has been destroyed, the `AssetID` is no longer linked to the owner, and the locked Beams get returned to the user.
 
 {% hint style="warning" %}
 Asset can be destroyed only if:
 
-* It is completely burned.
-* Minimum lock period elapsed after it was completely burned, and not emitted since then.
+* Total burn occurs.
+* Minimum lock period elapsed after asset burn completes without an emitted event.
 {% endhint %}
 
-This minimum lock period is needed to prevent manipulations (tampering) by the asset owner. For example, a user may want to receive a specific asset, then it must be sure that this `AssetID` will be associated with exactly this asset info (Metadata and owner key) before its transaction expires, i.e. the asset owner won't be able to destroy and re-create the asset in the meanwhile.
+This minimum lock period prevents any asset owner manipulations or tampering. For example, if a user requests a specific asset, the `AssetID` must be directly linked with the asset info (Metadata and owner key) before its transaction expires. This tweak prevents the the asset owner from destroying or re-create an asset during the lock period.
 
 ### Asset state
 
