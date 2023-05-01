@@ -44,21 +44,21 @@ The section below details key properties of smart contract (Beam Chain Side Shad
 * Shaders can communicate with other Shaders to delegate operations in the transaction context, activating the initial Shader on the chain.
 * The Shader that controls the assets can burn CA emissions, and the shaders defined logic conducts emission burning when manual emission burn cannot function.&#x20;
 * When a Shader deploys, it results in one of two outcomes: either the Shader consumes funds (transaction inputs) or unlocks funds (transaction outputs) recorded on the blockchain.&#x20;
-* Ove**rdraft protection**. BVM only validates equal amounts of locked and unlocked funds to discourage bad actors from creating confidential assets.&#x20;
+* **Overdraft protection**. BVM only validates equal amounts of locked and unlocked funds to discourage bad actors from creating confidential assets.&#x20;
 
 ## Wallet Side Shaders
 
-So far we have described what we call Chain side Shaders - programs that are executed within the node and activated by transactions. In this section we will describe the Wallet side architecture that supports interaction and invocation of the Shaders by creating transactions as well as retrieval and presentation of the Shader data in Beam Wallets.
+Thus far, we have explored smart contracts activated by sent transactions (Chain-side Shaders). We now review the wallet-side architecture, i.e., the framework that interacts with Shaders via new transactions and retrieval of Shader metadata to Beam Wallets.
 
 ### Wallet Web Application Platform
 
-Starting from v6.0, Beam Desktop (and in the future Mobile) Wallets will support built in Web Application Platform that will enable both Beam Team and third party developers to build web applications
+Since v6.0, Beam Desktop Wallets have a built-in web application platform that allows first-party and third-party app development (Mobile version TBA).
 
 ### The role of Wallet Side Shaders
 
-Since Beam blockchain is completely confidential, a wallet (i.e ability to sign transactions with secret keys) is always requried to perform any state changing operation. In order to simplify and organize interactions between the wallet and the chain side shader, Beam Confidential DeFi architecture supports implementation of Wallet Side Shaders. These Shaders encapsulate client logic and the API required to interact with each specific contract and they can be implemented either by the creators of the contract or by third parties.
+Due to Beam's confidential blockchain ecosystem, any blockchain-altering function requires wallets. Beam's DeFi architecture leverages the Wallet-side shader's client logic and API required for each smart contract, simplifying interactions between wallets and Chain-side Shaders
 
-As such Wallet Side Shaders provide maximum flexibility for separation of client and chain side logic. For example, they allow creating complicated Wallet Applications by creating a single UI for a group of different Chain side Shaders, including creating complex flows that perform operations across multiple different applications.
+Wallet-side Shaders offer great flexibility in separating client and chain-side logic, enabling complex flows that create operations across multiple wallets through a single UI.
 
 ## Resources
 
