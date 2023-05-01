@@ -6,47 +6,47 @@ description: >-
 
 # Implementation of Confidential Assets
 
-Those are the key features:
+Implementing confidential assets on the Beam blockchain takes advantage of the LelantusMW protocol enhancing the privacy and security for all transactions.
 
-* CA support
-  * Each UTXO may optionally have a blinded asset tag (similar to the Elements design by A.Poelstra).
-  * There's a proof of validity of the asset tag. It's based on the 1-out-of-many Sigma protocol (by Jens Groth).
-* Shielded pool (a.k.a. Lelantus-MW)
-  * CA support for shielded operations too
-  * Support for one-side payments and direct anonymous payments
+* **CA support**
+  * Blinded asset tags, similar to the Elements design by A. Poelstra, can optionally be associated with each Unspent Transaction Output (UTXO).
+  * Asset tags have a proof of validity based on the 1-out-of-many Sigma protocol, developed by [Jens Groth](https://eprint.iacr.org/2014/764.pdf).
+* **Shielded pool (e.g., LelantusMW)**
+  * CA support for shielded operations.
+  * One-side payments and direct anonymous payments support.
 * The system design is heterogeneous in nature:
-  * All kernels carry an excess blinding factors, and (optionally) extra validation rules (height lock, relative lock, etc.)
+  * All kernels carry excess blinding factors and may include extra validation rules such as height lock and relative lock.
   * Some kernels may control subsystems:
     * Asset control (creation, emission).
     * Shielded operations (mint, spend).
-* Those kernels, in addition to contributing to the balance, will have side effects as well.
+  * Kernels not only affect the balance but include side effects.
 
 ## Confidential assets support
 
 {% hint style="info" %}
-This design is very different from the older preliminary design.
+This current design differs significantly from the previous, older design.
 {% endhint %}
 
-We identify each asset by `AssetID`, which is a 32-bit integer. For each asset there's an appropriate NUMS generator, which is generated deterministically from the `AssetID` (via hashing). The `AssetID == 0` is reserved for default asset (Beam).
+We identify each asset by `AssetID` as a 32-bit integer. For each asset there's an appropriate NUMS generator, which is generates deterministically from the `AssetID` (via hashing). The `AssetID == 0` is reserved for default asset (Beam).
 
 ### UTXO encoding
 
-In MW it's possible to encode UTXOs of different kinds (asset types) by using different NUMS (nothing-up-my-sleeve) generators. The UTXO that encodes an asset consists of the following:
+Due Mimblewimble (MW), it is feasible to encode UTXOs (asset types) using different NUMS (nothing-up-my-sleeve) generators. The UTXO representing the asset is comprises the following:
 
 * Blinded generator: $$H^* = H_i + k_A•G$$
-* Asset surjection proof (proves that the provided generator is indeed one of the list with arbitrary blinding factor added)
+* Asset surjection proof (verifies the provided generator is indeed one of the generators listed (with arbitrary blinding factor added).
 * Pedersen commitment: $$C = k•G + v•H^*$$
-* Rangeproof (bulletproof) in terms of this blinded generator
+* Rangeproof (bulletproof): in terms of this blinded generator.
 
 #### Asset surjection proof
 
-It's based on Sigma protocol. The prover specifies a range of `AssetID` values, and proves that the specified generator is one of those with arbitrary blinding factor added.
+Derived from the Sigma protocol, where the prover specifies a range of `AssetID` values, and proves that the specified generator with arbitrary blinded factor is one of the generators within that range.&#x20;
 
-The verifier generates the list of the asset generators for this range, and subtracts (methodically) the provided blinded generator from each element in the list. Then the prover proves by the Sigma protocol that it knows the opening of one of the elements in terms of `G` generator (used for blinding factor).
+Meanwhile, the verifier generates a list of asset generators for the provided range, methodically subtracting the provided blinded generator from each element on the list. The Prover confirms the Sigma protocol by providing the opening of one of the elements for the blinding factor, i.e., the `G` generator.
 
 ### Asset control
 
-Any user is allowed to create its asset types. Unlike Beams, which are created automatically with each new block generated, assets are emitted and burned explicitly by their owners. The life cycle of each asset goes as following:
+Asset controls grants any user permission to create new asset types vs Beam which are automatically released into circulation with each new block generated. Assets are emitted and burned by the asset owner. The asset lifecycle goes as following:
 
 #### Asset creation
 
