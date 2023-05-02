@@ -14,7 +14,7 @@
 
 * [Beam Platform Architecture](beam-platform-architecture.md)
 * [Confidential Assets](confidential-assets/README.md)
-  * [Implementation of Confidential Assets](confidential-assets/implementation-of-confidential-assets.md)
+  * [Implementing Confidential Assets](confidential-assets/implementation-of-confidential-assets.md)
   * [Using Confidential Assets](confidential-assets/using-confidential-assets/README.md)
     * [Asset Metadata Descriptor](confidential-assets/using-confidential-assets/asset-metadata-descriptor.md)
 * [Beam Virtual Machine](beam-virtual-machine.md)
