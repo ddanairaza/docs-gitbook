@@ -2,19 +2,19 @@
 
 ## Beam Smart Contracts Overview
 
-Beam blockchain supports fully featured, Turing complete Smart Contracts that allow building complicated Decentralized Applications. Beam uses unique architecture and bespoke implementation which is different from most other blockchains. Here we will provide an overview of Beam Smart Contracts.&#x20;
+This section will give an overview of Beam's Smart Contracts. Beam's blockchain offers fully featured Smart Contracts that support [Turing complete programming](https://www.geeksforgeeks.org/what-is-meant-by-turing-complete-in-ethereum/), enabling the construction of complex Decentralized Applications. Beam's implementation and architecture differ from most other blockchains.&#x20;
 
-#### Contract Shaders and Application Shaders
+### Contract Shaders and Application Shaders
 
 In Beam, Smart Contracts have two components, Contract Shaders and Application Shaders.
 
 {% hint style="info" %}
-The term shader comes from a 3D graphics. It means a custom program, as opposed to the pre-defined fixed function.
+The term "shader" originated from 3D graphics and refers to a custom program, as opposed to a pre-defined fixed function.
 {% endhint %}
 
-Contract Shaders are deployed on the blockchain and are executed by Beam Virtual Machine. To invoke the contract, a wallet needs to construct a transaction that accesses one of the public methods of the contract.&#x20;
+Deployed on the blockchain, Contract Shaders are executed by the Beam Virtual Machine when a wallet constructs a transaction that accesses one of the public methods of the contract.&#x20;
 
-Application Shaders run within Beam Wallet and are used as a helper to expose the contract API to the decentralized applications. One Application Shader can interact with several Contract Shaders in order to provide complex functionality.
+On the other hand, Application Shaders run within the Beam Wallet and act as helpers to expose the contract API to decentralized applications. One Application Shader can interac with several Contract Shaders, providing complex functionality.
 
 <figure><img src="../.gitbook/assets/Beam Shaders.png" alt=""><figcaption><p>Conceptual Diagram of Applications and Contract Shaders</p></figcaption></figure>
 
@@ -22,11 +22,7 @@ Application Shaders run within Beam Wallet and are used as a helper to expose th
 
 Beam Shaders are implemented in WebAssembly and can be written in any programming language that can be compiled into WASM. Currently most shader are implemented in C++. Many examples of smart contracts can be found in the Beam [repository](https://github.com/BeamMW/beam/tree/master/bvm/Shaders).
 
-
-
-## Contract Shaders
-
-
+## Contract Shader
 
 Contract Shaders may do the following:
 
