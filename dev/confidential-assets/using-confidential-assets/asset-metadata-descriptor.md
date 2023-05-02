@@ -25,12 +25,12 @@ Asset metadata has 2 groups of properties:
 * Optional properties
 
 {% hint style="warning" %}
-Both types of properties are immutable and can't be changed after the asset is created. Therefore it is strongly recommended to double-check the values before starting the asset registration.
+Both types of properties are immutable and can't be changed after the asset is created. Therefore, double-checking the values before starting the asset registration is strongly recommended
 {% endhint %}
 
 ### Required properties:
 
-* `SCH_VER=` metadata schema version, currently must be `1`
+* `SCH_VER=` metadata schema version currently must be `1`
 * `N=` human-readable asset name, for example `Beam Coin`
 * `SN=` human-readable short name/asset code, for example `BEAM`. Length should not exceed 6 characters
 * `UN=` human-readable asset unit name, for example `Beam`

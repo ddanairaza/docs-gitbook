@@ -6,7 +6,7 @@ description: This documents describes CLI Confidential Assets workflow.
 
 ## Overview
 
-#### Assets Support
+### Assets Support
 
 {% hint style="info" %}
 Confidential Assets (CA) support requires [`Fork2`](https://github.com/BeamMW/beam/discussions/1889) and at least [`v5.0`](https://github.com/BeamMW/beam/wiki/Beam-wallet-protocol-API) CLI/API. Any CA operation before `Fork2` would fail with the `AssetsDisabledFork2 (45)` error code.
@@ -18,15 +18,15 @@ Users must specify the `--enable_assets` flag to perform  CA transactions with t
 
 Information about Assets UTXOs/Shielded Coins/Assets Transactions/Assets Summary can be displayed using `--assets` or `--asset_id` ID parameters added to the corresponding commands.
 
-#### Fees
+### Fees
 
 All fees (transaction fees and registration deposit) are always paid in BEAM/Groth. It is not possible to pay any fees using assets.
 
-#### Asset Owner
+### Asset Owner
 
 `Asset Owner` is the person (wallet) who registered the asset. The asset owner owns the private key used for signing asset `issue/consume/unreg` operations.&#x20;
 
-#### Asset ID
+### Asset ID
 
 The asset is identified to the network by its`Asset ID` which is an unsigned integer. All asset-related actions are performed using the asset ID. The node automatically assigns the first available asset ID when registering an asset.
 
@@ -34,17 +34,17 @@ Technically there can be a situation when one asset is unregistered, `asset id` 
 
 `Asset ID` of 0 is reserved and represents an original BEAM.
 
-#### Asset Info
+### Asset Info
 
 `Asset info` is information about the asset. It includes asset metadata, total emission and lock height. Asset info is received by the wallet automatically during asset transactions or can be requested manually using [asset\_info](./#getting-asset-info) command.
 
 Some parts of the asset info are valid only at the height the asset info has been received (`refresh height`). In subsequent blocks total asset emission can change or the asset become unregistered. Unregistering the asset invalidates all the information associated with the particular asset id.
 
-#### Limits
+### Limits
 
 Maximum Asset emission is $$2^{128}-1$$ asset nth units. Maximum amount for a single asset transaction (issue, consume, send, receive \&c.) is $$2^{64}-1$$ asset nth units.
 
-#### Lock period
+### Lock period
 
 Lock period is a timeframe when several asset operations are restricted for safety reasons. This ensures that asset is not changed during rollback and/or by the asset owner and that receiver of the asset would receive exactly the expected asset.
 
@@ -55,13 +55,13 @@ Restricted operations are the following:
 * Asset unreg
 * Asset send/receive
 
-#### Restore
+### Restore
 
 General rules apply to the restore process. You can restore your UTXOs but not transactions. To restore shielded UTXOs node used for the restore process should be running with your owner key. Asset info is not restored automatically. You would need to execute the `asset_info` command for each restored asset manually after the restore process is completed.
 
 ## Working with assets
 
-#### Asset registration
+### Asset registration
 
 Before asset can be used it should be registered on chain using the `asset_reg` command:
 
@@ -71,27 +71,27 @@ Before asset can be used it should be registered on chain using the `asset_reg` 
 
 You must specify your wallet password, node address, asset meta, optional transaction fee and add `--enable_assets` flag.
 
-#### Fees
+### Fees
 
 There is a fixed fee for asset registration of 3000 BEAM. This fee is mandatory, cannot be changed and deduced from your wallet automatically. Registration fee ensures that the network would not be spammed with dummy assets. Registration fee is returned to the owner of the asset as soon as the asset is unregistered. So basically 3000 BEAM are locked for the asset lifetime. You must also pay regular transactions fees. The `--fee` param applies only to the transaction fee, not the registration fee.
 
-#### Asset meta
+### Asset meta
 
 Asset meta is a byte buffer associated with the asset and stored on chain. It is provided on asset registration and cannot be changed afterwards. Currently CLI expects UTF8 string with several mandatory `Key=Value` pairs. It is not possible to register an asset without meta. Please consult the [Asset Descriptor](asset-metadata-descriptor.md) document for more details.
 
-#### Asset ID
+### Asset ID
 
 After successful asset registration it is associated with the `Asset ID` issued by the node. Asset becomes known to the world by its ID. Asset id is used in any asset operations performed by any person. Asset owner can perform asset operations using as asset id or asset meta. Consult the [Asset ID](./#asset-id) section for more details.
 
-#### Lock Period
+### Lock Period
 
 Immediately after the asset registration it becomes locked for 24h hours. Consult the [Lock period](./#lock-period) section for more details.
 
-#### Privacy
+### Privacy
 
 Transaction kernel including all the asset meta becomes visible to the world. Node would know that you/your IP is the owner of the asset.
 
-#### API Restriction
+### API Restriction
 
 Asset registration can be performed only via CLI. There is no API call for asset registration for safety reasons.
 
@@ -145,7 +145,7 @@ You must specify your wallet password, node address, asset id or asset meta, con
 
 #### Fees
 
-Asset consuming is absolutely free. You pay only regular transaction fee.
+Asset consumption is free, requiring only regular transaction fees.
 
 #### Limits
 
@@ -157,7 +157,7 @@ If after the consume operation total asset emission reaches 0 asset becomes lock
 
 #### Privacy
 
-Asset information is forcibly refreshed (received from node) during this operation. Operation fails if node doesn't confirm the asset. Transaction kernel including the consumed asset amount and asset id becomes visible to the world. Node would know that you/your IP is the owner of the asset.
+Asset information is forcibly refreshed (received from node) during this operation. Operation fails if node doesn't confirm the asset. Transaction kernel, including the consumed asset amount and asset id becomes visible to the world. Node would know that you/your IP is the owner of the asset.
 
 ## Asset unreg
 
