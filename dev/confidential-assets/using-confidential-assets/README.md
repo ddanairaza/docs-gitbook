@@ -8,11 +8,13 @@ description: This documents describes CLI Confidential Assets workflow.
 
 #### Assets Support
 
-Confidential Assets (hereinafter **СA**) support requires `Fork2` and at least `v5.0` CLI/API. Any CA operation before `Fork2` would fail with the `AssetsDisabledFork2 (45)` error code.
+{% hint style="info" %}
+Confidential Assets (CA) support requires [`Fork2`](https://github.com/BeamMW/beam/discussions/1889) and at least [`v5.0`](https://github.com/BeamMW/beam/wiki/Beam-wallet-protocol-API) CLI/API. Any CA operation before `Fork2` would fail with the `AssetsDisabledFork2 (45)` error code.
+{% endhint %}
 
-In `v5.0` CA support is disabled by default to avoid compatibility issues. In the GUI wallet CA support cannot be enabled at the moment. All incoming CA transactions would be rejected by the GUI wallet with the `AssetsDisabled (43)` error code. Rejected CA transactions are not displayed by the GUI wallet. Full GUI assets support is planned for `v5.1`.
+In `v5.0` CA support is disabled by default to prevent compatibility issues. Currently, CA transactions are not supported in the GUI wallet, and the GUI wallet would reject all incoming CA transactions with the `AssetsDisabled (43)` error code. Rejected CA transactions do not display in the GUI wallet. Full GUI assets support is planned for later releases.
 
-In the CLI and API `--enable_assets` flag should be specified to perform any CA transactions. Without this flag CA transactions would be rejected with the `AssetsDisabled (43)` error code.
+Users must specify the `--enable_assets` flag to perform  CA transactions with the CLI and API Without this flag, CA transactions would be rejected with the `AssetsDisabled (43)` error code.
 
 Information about Assets UTXOs/Shielded Coins/Assets Transactions/Assets Summary can be displayed using `--assets` or `--asset_id` ID parameters added to the corresponding commands.
 
@@ -22,15 +24,15 @@ All fees (transaction fees and registration deposit) are always paid in BEAM/Gro
 
 #### Asset Owner
 
-`Asset Owner` is the person (wallet) which registered the asset. Asset owner owns private key used for signing asset `issue/consume/unreg` operations. Only the asset owner can perform these operations.
+`Asset Owner` is the person (wallet) who registered the asset. The asset owner owns the private key used for signing asset `issue/consume/unreg` operations.&#x20;
 
 #### Asset ID
 
-`Asset ID` is an unsigned integer associated with the asset. Asset is known to the world by its asset id. Asset operations are performed using its asset id. Node assigns asset id during the asset registration process and uses the first id available.
+The asset is identified to the network by its`Asset ID` which is an unsigned integer. All asset-related actions are performed using the asset ID. The node automatically assigns the first available asset ID when registering an asset.
 
-Technically there can be a situation when one asset is unregistered, asset id becomes available and the next registered asset takes the id that has been previously used. [Lock period](./#lock-period) is introduced to ensure that asset receiver would never receive an unexpected (forged) asset.
+Technically there can be a situation when one asset is unregistered, `asset id` becomes available, and the next registered asset takes the id that has been previously used. A [Lock period](./#lock-period) is introduced to ensure that asset receiver would never receive an unexpected (forged) asset.
 
-Asset ID of 0 is reserved and represents original BEAM.
+`Asset ID` of 0 is reserved and represents an original BEAM.
 
 #### Asset Info
 

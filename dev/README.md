@@ -20,13 +20,13 @@ This developer portal will provide comprehensive information about the developme
 * [Confidential Assets](./#confidential-assets)
 * [Smart Contracts (aka Shaders)](./#smart-contracts)&#x20;
 * [Wallet API (and integration guides)](./#wallet-api)
-* Web Wallet&#x20;
-* Desktop Wallet
-* Node
+* [Web Wallet ](./#web-wallet)
+* [Desktop Wallet](./#desktop-wallet)
+* [Node](./#node)
 
 ### Core Technology Overview
 
-In the beginning, Beam originally was designed as an implementation of the [Mimblewimble ](beam-technology/mimblewimble.md)([original whitepaper](https://docs.beam.mw/Mimblewimble.pdf)) protocol. Since then, Beam version 5.0 included support for a [Lelantus](https://github.com/BeamMW/beam/wiki/Lelantus-MW) shielded pool which became the [LelantusMW](beam-technology/lelantusmw.md) protocol that is the core of Beam's Privacy Layer one.
+In the beginning, Beam was originally designed as an implementation of the [Mimblewimble ](beam-technology/mimblewimble.md)([original whitepaper](https://docs.beam.mw/Mimblewimble.pdf)) protocol. Since then, Beam version 5.0 included support for a [Lelantus](https://github.com/BeamMW/beam/wiki/Lelantus-MW) shielded pool which became the [LelantusMW](beam-technology/lelantusmw.md) protocol that is the core of Beam's Privacy Layer one.
 
 The Beam network uses the [Dandelion protocol](https://blockonomi.com/dandelion-protocol/), merging non-interactive transactions along the stem phase. Additional technical information regarding this implementation can be found [here](https://github.com/BeamMW/beam/wiki/Transaction-graph-obfuscation).&#x20;
 
