@@ -48,7 +48,7 @@ After you have downloaded the file, unzip it. Go to the folder and run `BeamWall
 **Ubuntu 16 is no longer officially supported!**
 {% endhint %}
 
-To run on Ubuntu 16 need to execute:
+To run on Ubuntu 16, enter the following commands in Linux terminal:
 
 ```
 sudo add-apt-repository ppa:ubuntu-toolchain-r/test
@@ -73,7 +73,7 @@ Files and locations of Beam metadata in your Linux operating system.
 
 Once the application image is downloaded, double-click the icon to start the installation.
 
-When you click on the `Beam-Wallet-6.0.11638.4326.exe` file installer will run. On the opened screen you’ll see a default path to the wallet, which you can change using the action menu. Also, it suggests you read Licenses Terms and conditions.
+When you click on the `Beam-Wallet-6.0.11638.4326.exe` file installer will run. You’ll see a default path to the wallet, which you can change using the action menu. Also, it suggests you read Licenses Terms and Conditions. A default path to the wallet will display on the opened screen.
 
 1. Please read the terms and conditions carefully and click **agree** and install.
 2. **Wait** until the installation is complete.
@@ -85,7 +85,7 @@ When you click on the `Beam-Wallet-6.0.11638.4326.exe` file installer will run. 
 
 ### Files and Locations <a href="#windows-files-and-locations" id="windows-files-and-locations"></a>
 
-Files and locations for Windows. Your `wallet.db` file  contains wallet metadata including transaction history and address list.
+Files and locations for Windows. Your `wallet.db` file contains wallet metadata, including transaction history and address list.
 
 | FILE            | LOCATION                                                                                                                                          |
 | --------------- | ------------------------------------------------------------------------------------------------------------------------------------------------- |

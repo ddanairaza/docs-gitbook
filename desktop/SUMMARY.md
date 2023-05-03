@@ -4,8 +4,6 @@
 
 ## Prerequisites
 
-***
-
 * [Download Wallet](download-wallet.md)
 * [Installing Beam Wallet](installation-guide.md)
 
@@ -26,14 +24,10 @@
 
 ## Confidential DeFi
 
-***
-
 * [Confidential Assets](confidential-assets.md)
 * [DApp Store](daap-store.md)
 
 ## Advanced topics
-
-***
 
 * [Proof of Transaction](proof-of-transaction.md)
 * [UTXO](utxo.md)
