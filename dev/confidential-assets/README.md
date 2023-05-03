@@ -8,6 +8,6 @@ In the screenshot below you see an example of Beam Desktop Wallet holding RAYS -
 
 Information about CA includes the following topics:
 
-* [Implementation of Confidential Assets](implementation-of-confidential-assets.md)
+* [Implementing Confidential Assets](implementation-of-confidential-assets.md)
 * [Using Confidential Assets](using-confidential-assets/)
 * Using Confidential Assets through Wallet API
