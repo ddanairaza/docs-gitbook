@@ -96,7 +96,7 @@ The manifest file contains the required metadata for your application that will 
    "version":  "1.1.17", //required
    "api_version":  "7.0", //required, max length 10 characters 
    "min_api_version":  "7.0", //required, max length 10 characters
-   "icon":  "localapp/app/logo.svg", //required, max size 10240 byte. should start with data:image/svg+xml;utf8 (size calculated with this prefix)
+   "icon":  "localapp/app/logo.svg", //required, max size 10240 byte. SVG files only
    "guid":  "d353352eb6a94618ac0a8ec7b29ca7bb" //required
 }
 ```
