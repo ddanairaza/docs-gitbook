@@ -66,3 +66,47 @@ During application development, it is useful to be able to see the developer con
 
 After you relaunch the wallet with this flag, you can open a regular web browser and navigate to: [http://localhost:20000/](http://localhost:20000/)
 
+### Packaging into .dapp file
+
+In order to distribute the application as a stand alone archive in should be packaged into a .dapp file
+
+This can be done following the steps below:
+
+1. Create the following folder structure
+
+ - Create an empty folder, use your dapp name for simplicity
+ - Inside this folder create another empty folder called 'app'
+
+
+2. Build your application
+
+Run ```yarn build``` 
+This will create an `html` folder (if you are using the React template as provided by beam here (https://github.com/BeamMW/beam-dapp-react)
+Copy the contents of the build folder (in our case 'html') into the app folder created in step 1. 
+
+3. Create manifest file
+
+The manifest file contains the required metadata for your application that will be parsed and presented by the Beam Wallet during dApp installation.
+
+```
+{
+   "name":  "",   //required, max length 30 characters
+   "description":  "", //required, max length 1024 characters
+   "url":  "localapp/app/index.html", //required
+   "version":  "1.1.17", //required
+   "api_version":  "7.0", //required, max length 10 characters 
+   "min_api_version":  "7.0", //required, max length 10 characters
+   "icon":  "localapp/app/logo.svg", //required, max size 10240 byte. should start with data:image/svg+xml;utf8 (size calculated with this prefix)
+   "guid":  "d353352eb6a94618ac0a8ec7b29ca7bb" //required
+}
+```
+
+This file should be called *manifest.json* and copied into the same folder as the 'app' folder created above
+
+>TIP: To generate the guid you can use online GUID generators like: https://www.guidgenerator.com/online-guid-generator.aspx 
+>Just remember to remove the checkbox from the 'hiphens' option
+
+4. Zip the top application folder (the one that has the manifest and the 'app' folder inside of it into a .zip archive
+5. Rename the .zip file to .dapp
+
+You can now test the local installation by using the 'Install DApp from file' option in the Desktop Wallet DApp Store
