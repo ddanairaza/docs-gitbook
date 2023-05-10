@@ -9,9 +9,9 @@ Why DAppnet?&#x20;
 
 Beam consists of three public networks:&#x20;
 
-1. DAppnet is a testing sandbox that produces a pseudo-mining block every 15 seconds.&#x20;
-2. Testnet produces genuine mining blocks but is mostly a testing site before Mainnet deployment.
-3. Mainnet is the living Beam network with real assets.
+1. **DAppnet:** a testing sandbox that produces a pseudo-mining block every 15 seconds.&#x20;
+2. **Testnet:** produces genuine mining blocks but is mostly a testing site before Mainnet deployment.
+3. **Mainnet:** the living Beam network with real assets.
 {% endhint %}
 
 ### Install DAppnet wallet
