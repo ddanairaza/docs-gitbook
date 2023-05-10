@@ -16,7 +16,7 @@ Beam consists of three public networks:&#x20;
 
 ### Install DAppnet wallet
 
-The latest version of the Beam DAppnet Wallet is on our website.
+The latest version of the Beam DAppnet Wallet is on our [website](https://dappnet.beam.mw/downloads/).
 
 Install the wallet using default settings. This will run a local node that we will use to run our Shaders. Create a new wallet, and save the seed for future use.&#x20;
 
