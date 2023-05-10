@@ -1,22 +1,22 @@
+---
+description: This tutorial describes using Beam Shaders on DAppnet
+---
+
 # Using Beam Shaders
 
-In this tutorial we will describe how to use Beam Shaders on DAPPNET
+{% hint style="success" %}
+Why DAppnet?&#x20;
 
-{% hint style="info" %}
-Why DAPPNET?&#x20;
+Beam consists of three public networks:&#x20;
 
-Beam has three public networks: Dappnet, Testnet and Mainnet
-
-Dappnet has fake mining and produces a block every 15 seconds. It is recommended for writing and testing DApps and was created specifically for this purpose
-
-Testnet has real mining and is mostly used as final testing ground before Mainnet releases
-
-Mainnet is live Beam network with real assets
+1. DAppnet is a testing sandbox that produces a pseudo-mining block every 15 seconds.&#x20;
+2. Testnet produces genuine mining blocks but is mostly a testing site before Mainnet deployment.
+3. Mainnet is the living Beam network with real assets.
 {% endhint %}
 
-### Downloading DAPPNET wallet
+### Install DAppnet wallet
 
-To get started, download the latest version of Beam Dappnet Wallet from [Beam Website](https://beam.mw/downloads/dappnet)
+The latest version of the Beam DAppnet Wallet is on our website.
 
 Install the wallet using default settings. This will run a local node that we will use to run our Shaders. Create a new wallet, and save the seed for future use.&#x20;
 
