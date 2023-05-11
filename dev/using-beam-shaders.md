@@ -21,7 +21,7 @@ The latest version of the Beam DAppnet Wallet is on our [website](https://dappne
 When [installing DAppnet](https://beamx.gitbook.io/dappnet-user-guide/settings), choose the default settings to operate the local node (required) to run Beam Shader contracts.  Create a new wallet (save the seed phrase).&#x20;
 
 {% hint style="info" %}
-Beam Shaders require the use of the integrated node found in the Desktop Wallet and must remain open for this tutorial.
+Beam Shaders require the use of the integrated node found in the DAppnet Wallet and must remain open for this tutorial.
 {% endhint %}
 
 ### Withdraw from the Faucet
@@ -42,37 +42,38 @@ Beam shaders are deployed via CLI wallet which can be found on our [website](htt
 
 Create a `shader` folder in your hard drive, and transfer CLI wallet archive. The `shader` folder should contain two files: two files: the `CLI wallet archive` and wallet `config` file.&#x20;
 
-### Copy `wallet.db` from Desktop Wallet
-
-`wallet.db` holds all information related to the wallet data. We will use the same wallet.db from the Desktop Wallet that we have installed in the previous step.&#x20;
-
 {% hint style="danger" %}
-It is not recommended to do this in real wallets, but for the development purposes it is ok
+For this tutorial, we will use our DAppnet's `wallet.db`(for testing purposes only. This practice is not recommended with wallets containing real assets).
 {% endhint %}
 
-The wallet.db file is located in %LOCALAPPDATA%\Beam Wallet folder. Copy it to the same folder with the CLI wallet executable
+### Copy `wallet.db` from DAppnet Wallet
+
+Beam wallets store wallet metadata (transaction history, balance, etc) locally on your hard drive in the `wallet.db` file.&#x20;
+
+Locate your DAppnet `wallet.db` in the `%LOCALAPPDATA%\Beam Wallet folder`. Transfer the `wallet.db` in the same `shader` folder.
 
 {% hint style="info" %}
-On other operating systems, check documentation for wallet.db location or check the Troubleshooting section in Desktop Wallet Settings screen
+Refer to our [Desktop Wallet guide](beam-wallets/desktop-wallet.md) for `wallet.db` file location for macOS and Linux operating systems.
 
 
 {% endhint %}
 
 <figure><img src=".gitbook/assets/image (11).png" alt=""><figcaption></figcaption></figure>
 
-Configure CLI wallet settings
+### Configure CLI wallet settings
 
-Before we start running shaders, let's configure the CLI wallet settings to make our command lines shorter and simpler. We are going to connect our CLI wallet to the built in node running. Open the beam-wallet.cfg file in your favorite text editor and set the following parameters:
+One more crucial step before running Shader contracts involves configuring the CLI wallet settings to simplify and shorten commands.&#x20;
 
-`log_level=debug`
+To connect CLI wallet's to the built-in node, first edit the `config` file using text editor (such as [Visual Studio Code](https://code.visualstudio.com/)) and enter the following:
 
-`pass=<your wallet password>`
+```
+log_level=debug
+pass=<your wallet password>
+node_addr=127.0.0.1:10005
+wallet_path=wallet.db
+```
 
-`node_addr=127.0.0.1:10005`
-
-`wallet_path=wallet.db`
-
-As as result your configuration file should look something like this:
+The `config` file should resemble the following:
 
 <pre><code><strong>################################################################################
 </strong># General options:
@@ -109,7 +110,7 @@ wallet_path=wallet.db
 
 </code></pre>
 
-Now we are ready to run Shaders, all that's left is to choose which shaders to run ))
+The testing environment is ready to deploy Shaders, all that remains is selecting the Shader contract.
 
 ### Getting the Application Shader file&#x20;
 
