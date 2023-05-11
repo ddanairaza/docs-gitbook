@@ -4,6 +4,8 @@ This page serves as a comprehensive overview of all the updates, improvements, b
 
 Explore the detailed changelogs for each version by clicking on the corresponding links below. This will help you better understand the history and evolution of this groundbreaking cryptocurrency:
 
+- [Groovy Gluon 7.3.14073](/docs/changelog/7.3.14073)
+- [Groovy Gluon 7.3.14059](/docs/changelog/7.3.14059)
 - [Groovy Gluon 7.3.14027](/docs/changelog/7.3.14027)
 - [Groovy Gluon 7.3.14025](/docs/changelog/7.3.14025)
 - [Groovy Gluon 7.2.13686](/docs/changelog/7.2.13686)
