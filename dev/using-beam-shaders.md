@@ -28,25 +28,25 @@ Beam Shaders require the use of the integrated node found in the Desktop Wallet 
 
 All DAppnet transactions (including Beam Shader deployment) contain transaction fees that are paid in Beam coins, and require a positive wallet balance.
 
-Launch [My DApp Store](https://beamx.gitbook.io/dappnet-user-guide/my-dapp-store)  and find the Faucet Application.&#x20;
+Launch [My DApp Store](https://beamx.gitbook.io/dappnet-user-guide/my-dapp-store) <img src=".gitbook/assets/Screen Shot 2023-05-10 at 10.27.02 PM.png" alt="" data-size="line"> and find the Faucet Application.&#x20;
 
 <figure><img src=".gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
 
-Open the Faucet and click on 'Get your first BEAM' button. Then click 'Confirm' and wait for the transaction to complete.
+Launch **Faucet >>> Get your first Beam >>> Confirm,**  and Beam coins will deposit into your wallet after the next mining block.
 
 <figure><img src=".gitbook/assets/image (16).png" alt=""><figcaption></figcaption></figure>
 
-### Setting up CLI wallet
+### Configuring your CLI wallet
 
-In this part of the tutorial we will invoke shaders using a CLI wallet. You can download the walelt from the [same location](https://beam.mw/downloads/dappnet) as the Desktop wallet before that.
+Beam shaders are deployed via CLI wallet which can be found on our [website](https://dappnet.beam.mw/downloads/). This tutorial uses Windows Command Prompt, but users can substitute [Mac](shader-sdk-mac.md) and Linux commands if desired.
 
-Create an empty folder (in this tutorial we are using Windows, but you can use Mac or Linux instead) and copy the contents of the CLI wallet archive. You should see two files: the CLI wallet executable and the config file for the wallet.&#x20;
+Create a `shader` folder in your hard drive, and transfer CLI wallet archive. The `shader` folder should contain two files: two files: the `CLI wallet archive` and wallet `config` file.&#x20;
 
-### Copy wallet.db from Desktop Wallet
+### Copy `wallet.db` from Desktop Wallet
 
-wallet.db holds all information related to the wallet data. We will use the same wallet.db from the Desktop Wallet that we have installed in the previous step.&#x20;
+`wallet.db` holds all information related to the wallet data. We will use the same wallet.db from the Desktop Wallet that we have installed in the previous step.&#x20;
 
-{% hint style="warning" %}
+{% hint style="danger" %}
 It is not recommended to do this in real wallets, but for the development purposes it is ok
 {% endhint %}
 
