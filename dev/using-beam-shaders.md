@@ -26,9 +26,9 @@ Beam Shaders require the use of the integrated node found in the Desktop Wallet 
 
 ### Withdraw from the Faucet
 
-All DAppnet transactions (including Beam Shader deployment) contain transaction fees that are paid in Beam coins,  we will need to get some positive balance in our wallet in order to be able to run our Shaders.
+All DAppnet transactions (including Beam Shader deployment) contain transaction fees that are paid in Beam coins, and require a positive wallet balance.
 
-Open the DApp Store by clicking the icon on the left vertical menu bar and find a Faucet Application.&#x20;
+Launch [My DApp Store](https://beamx.gitbook.io/dappnet-user-guide/my-dapp-store)  and find the Faucet Application.&#x20;
 
 <figure><img src=".gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
 
