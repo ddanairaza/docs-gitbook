@@ -18,15 +18,15 @@ Beam consists of three public networks:&#x20;
 
 The latest version of the Beam DAppnet Wallet is on our [website](https://dappnet.beam.mw/downloads/).
 
-Install the wallet using default settings. This will run a local node that we will use to run our Shaders. Create a new wallet, and save the seed for future use.&#x20;
+When [installing DAppnet](https://beamx.gitbook.io/dappnet-user-guide/settings), choose the default settings to operate the local node (required) to run Beam Shader contracts.  Create a new wallet (save the seed phrase).&#x20;
 
 {% hint style="info" %}
-We will keep the Desktop Wallet running during our work, since we are going to use the integrated node to run our shaders
+Beam Shaders require the use of the integrated node found in the Desktop Wallet and must remain open for this tutorial.
 {% endhint %}
 
-### Get some Beam from the Faucet
+### Withdraw from the Faucet
 
-Since every Beam transaction is accompanied by a fee paid in BEAM coins, we will need to get some positive balance in our wallet in order to be able to run our Shaders.
+All DAppnet transactions (including Beam Shader deployment) contain transaction fees that are paid in Beam coins,  we will need to get some positive balance in our wallet in order to be able to run our Shaders.
 
 Open the DApp Store by clicking the icon on the left vertical menu bar and find a Faucet Application.&#x20;
 
