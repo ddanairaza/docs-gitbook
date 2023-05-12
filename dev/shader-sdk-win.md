@@ -1,20 +1,20 @@
 # Shader SDK (WIN)
 
-In this tutorial we wil show how to setup Beam Shader SDK on Windows OS
+This tutorial demonstrates How-to set up Beam Shader SDK on the Windows operating system.
 
 {% hint style="warning" %}
-The Shader SDK's current version can be characterized as an 'early developer preview', with a high possibility of encountering unusual issues and bugs.
+The Shader SDK's current version can be characterized as an _**early developer preview**_, with a high possibility of encountering unusual issues and bugs.
 {% endhint %}
 
 ### Prerequisites
 
-You will need Microsoft Visual Studio, community edition will do just fine. In this tutorial I have used the 2022 version.&#x20;
+To follow along, make sure you have [Microsoft Visual Studio](https://visualstudio.microsoft.com/) installed. For this tutorial, I am using 2022 edition, but the community edition will work.
 
-You will also need a Python 3.x installed and available in the path (check by typing 'python' in the command line)
+Additionally, [Python 3.x](https://www.python.org/downloads/) must be installed and available in the systems path. Verify Python is installed by entering  `python` in the command line.
 
 ### Building Shader SDK
 
-1. Clone Shader SDK repository from here: [https://github.com/BeamMW/shader-sdk](https://github.com/BeamMW/shader-sdk)
+1. [**Clone Shader SDK repository**](https://github.com/BeamMW/shader-sdk)**.** &#x20;
 2. Open Developer Command Prompt for VS. This can be done from either Tools Menu within the VS IDE or by finding an entry in the Start menu items
 3. Change directory to the location of the shader-sdk and run: `shade init`
 
