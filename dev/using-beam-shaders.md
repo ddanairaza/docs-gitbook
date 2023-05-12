@@ -5,7 +5,7 @@ description: This tutorial describes using Beam Shaders on DAppnet
 # Using Beam Shaders
 
 {% hint style="success" %}
-[https://dappnet.explorer.beam.mw/](https://dappnet.explorer.beam.mw/)[https://dappnet.explorer.beam.mw/](https://dappnet.explorer.beam.mw/)Why DAppnet?&#x20;
+[Why DAppnet](https://dappnet.beam.mw/downloads/)?&#x20;
 
 Beam consists of three public networks:&#x20;
 
