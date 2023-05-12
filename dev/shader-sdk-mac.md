@@ -3,7 +3,7 @@
 In this tutorial we will show how to setup Beam Shader SDK on Mac OS
 
 {% hint style="warning" %}
-The Shader SDK's current version can be characterized as an 'early developer preview', with a high possibility of encountering unusual issues and bugs.
+The Shader SDK's current version can be characterized as an _**early developer preview**_, with a high possibility of encountering unusual issues and bugs.
 {% endhint %}
 
 ### Prerequisites
