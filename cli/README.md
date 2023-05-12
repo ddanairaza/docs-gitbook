@@ -4,7 +4,7 @@ description: The "official" Beam command line reference guide!
 
 # Beam command line (CLI) guide
 
-The command line is the most reliable method of using Beam wallets; certain features (Registering CAs, Lightning Payments, Beam Shaders) can only perform on the command line. Available for macOS, Windows, and Linux.
+The command line is the most reliable method of using Beam wallets and certain features (Registering CAs, Lightning Payments, Beam Shaders) can only perform on the command line. Available for macOS, Windows, and Linux.
 
 Due to Beam's LelantusMW protocols, the private keys of Beam wallets record the user's UTXO balance on the blockchain, while transaction histories, addresses, and other wallet metadata are stored locally on each device.
 
