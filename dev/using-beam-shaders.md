@@ -5,7 +5,7 @@ description: This tutorial describes using Beam Shaders on DAppnet
 # Using Beam Shaders
 
 {% hint style="success" %}
-Why DAppnet?&#x20;
+[https://dappnet.explorer.beam.mw/](https://dappnet.explorer.beam.mw/)[https://dappnet.explorer.beam.mw/](https://dappnet.explorer.beam.mw/)Why DAppnet?&#x20;
 
 Beam consists of three public networks:&#x20;
 
@@ -28,7 +28,7 @@ Beam Shaders require the use of the integrated node found in the DAppnet Wallet 
 
 All DAppnet transactions (including Beam Shader deployment) contain transaction fees that are paid in Beam coins, and require a positive wallet balance.
 
-Launch [My DApp Store](https://beamx.gitbook.io/dappnet-user-guide/my-dapp-store) <img src=".gitbook/assets/Screen Shot 2023-05-10 at 10.27.02 PM.png" alt="" data-size="line"> and find the Faucet Application.&#x20;
+Launch [My DApp Store](https://beamx.gitbook.io/dappnet-user-guide/my-dapp-store) <img src=".gitbook/assets/Screen Shot 2023-05-10 at 10.27.02 PM.png" alt="" data-size="line"> and find the **Faucet Application** <img src=".gitbook/assets/Screen Shot 2023-05-11 at 5.38.24 PM.png" alt="" data-size="line">.&#x20;
 
 <figure><img src=".gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
 
@@ -54,8 +54,6 @@ Locate your DAppnet `wallet.db` in the `%LOCALAPPDATA%\Beam Wallet folder`. Tran
 
 {% hint style="info" %}
 Refer to our [Desktop Wallet guide](beam-wallets/desktop-wallet.md) for `wallet.db` file location for macOS and Linux operating systems.
-
-
 {% endhint %}
 
 <figure><img src=".gitbook/assets/image (11).png" alt=""><figcaption></figcaption></figure>
@@ -118,7 +116,7 @@ The [Dappnet Blockchain Explorer](https://dappnet.explorer.beam.mw/) (see **Cont
 
 <figure><img src=".gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
 
-For the purposes of this tutorial, we will select the **Vault** Shader application.
+For the purposes of this tutorial, we will select the **Vault** Shader application (copy the Vault Contract ID -- we will use this later).
 
 {% hint style="info" %}
 At thid time, the list of available contracts is DAppnet. The majority of deployed contracts don't contain a contract description. These features will be adjusted with future iterations of DAppnet.
@@ -132,19 +130,19 @@ Download [`app.wasm`](https://github.com/BeamMW/beam/blob/master/bvm/Shaders/vau
 
 Open as command line interface and change directory to the location of the CLI wallet executable.&#x20;
 
-First thing we will do is print the API of the contract by running the following command:
+First, print the contract API with the following command:
 
 ```
 beam-wallet-dappnet.exe shader --shader_app_file vault\app.wasm
 ```
 
-Note that we only provide one parameter (--shader\_app\_file) since we assume all other parameters are set in the configuration file. We also provide a path to the application shader assuming it is located in the 'vault' folder.
+Note, we have provided only a single parameter (`--shader_app_file`) since it's assume all other parameters are set in the `config` file and a separate path to the application Shader is found in the `shader`  folder (with the Vault contract).
 
-The output of this command will look something like this (debug logs are on in this example)
+The output should resemble the following (debug logs are found in this example):
 
-<figure><img src=".gitbook/assets/image (21).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (21).png" alt=""><figcaption><p><code>--shader_app_file method</code></p></figcaption></figure>
 
-Let's copy the Shader output part into the text editor and format it to a standard JSON form. The end results will look like this:
+Copy the Shader output (see below) into your text editor, (following JSON format).
 
 ```json
  {
@@ -211,41 +209,44 @@ Let's copy the Shader output part into the text editor and format it to a standa
  }
 ```
 
-What you see here is the API of the Vault contract as it is presented by the Application Shader we have used. The API actions are separated into roles, in this case 'manager' and 'my\_account'. Roles are only used as semantic grouping.
+The Vault contract API (as retrieved from the Vault Shader contract) separates the API actions into roles, (`manager` , `my_account`) following semantic structure.
 
-Let's use the 'view\_accounts' method to list all accounts in the Vault
+The `view_accounts` method will list all Vault accounts present and were we can can plug the Valut Shader (found in the [DAppnet explorer](https://dappnet.explorer.beam.mw/)) contract ID into the `view_accounts` parameter.
 
-Since we are going to be working with a specific Contract Shader we will need to use the contract id that we have copied from the blockchain explorer: \
-`d9c5d1782b2d2b6f733486be480bb0d8bcf34d5fdc63bbac996ed76af541cc14`
+```
+d9c5d1782b2d2b6f733486be480bb0d8bcf34d5fdc63bbac996ed76af541cc14
+```
 
-Let's run the following command:
+Enter the following command:
 
-`beam-wallet-dappnet.exe shader --shader_app_file vault\app.wasm --shader_args=cid=d9c5d1782b2d2b6f733486be480bb0d8bcf34d5fdc63bbac996ed76af541cc14,role=manager,action=view_accounts`
+```
+beam-wallet-dappnet.exe shader --shader_app_file vault\app.wasm --shader_args=cid=d9c5d1782b2d2b6f733486be480bb0d8bcf34d5fdc63bbac996ed76af541cc14,role=manager,action=view_accounts
+```
 
-The output will show us something similar to this:
+The output should resemble the following:
 
-<figure><img src=".gitbook/assets/image (17).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (17).png" alt=""><figcaption><p>View_accounts method</p></figcaption></figure>
 
-In this case there are currently no accounts in the contract. Let's create one using a 'deposit' method. Let's start with depositing 1 BEAM. To do that we will run the following command:
+In the above example, there are currently no accounts within the contract. To create an account, utilizing the `deposit` method, we will deposit one Beam coin with the following command:
 
-`beam-wallet-dappnet.exe shader --shader_app_file vault\app.wasm --shader_args="cid=d9c5d1782b2d2b6f733486be480bb0d8bcf34d5fdc63bbac996ed76af541cc14,role=my_account,action=deposit,amount=100000000"`
+```
+beam-wallet-dappnet.exe shader --shader_app_file vault\app.wasm --shader_args="cid=d9c5d1782b2d2b6f733486be480bb0d8bcf34d5fdc63bbac996ed76af541cc14,role=my_account,action=deposit,amount=100000000"
+```
 
-Note that amount is set in Groth, which is 1^10-8 of BEAM.&#x20;
+**Note:** `amount` is set in Groth, which is $$1^10-8$$  of Beam.&#x20;
 
-This action will take some time to complete since the transaction is created and sent to the network. The result will be similar to this:
+The above action creates and sends the transaction to the network (so it will take a moment). When completed, the output should resemble the following:
 
-<figure><img src=".gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (5).png" alt=""><figcaption><p><code>Deposit</code> Method</p></figcaption></figure>
 
-The important part is the one here which explains what happened
+The response generated (see below) claries the API response:
 
-<figure><img src=".gitbook/assets/image (18).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (18).png" alt=""><figcaption><p>Deposit successful</p></figcaption></figure>
 
-Let's run the 'accounts' command again and see if anything changed?
+To confirm the transaction was successful, re-enter the `accounts` command:
 
-<figure><img src=".gitbook/assets/image (7).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (7).png" alt=""><figcaption><p>New account creation</p></figcaption></figure>
 
-Indeed, now we see that there is a new account identified by a public key and having a balance of 1 Beam. As an exercise you are invited tp do the same, and also get your BEAM back. You can try to get BEAM from someone elses account (hint: you can't).
+The response generated confirms a new account is identified by your wallet public key and has a balance of one Beams. To get aquainted with the API function, try depositing and withdrawing Beam's into your account. Users can also attempt to retrieve Beam's from a seperate account (**spoiler: it won't work**).
 
-
-
-In the next part of the tutorial we will see how to code this contract and deploy it on chain.&#x20;
+To learn how to code your own Shader application contract and deploy it chain, please refer to our [Shader SDK tutorial](shader-sdk-win.md).
