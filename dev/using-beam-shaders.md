@@ -124,9 +124,9 @@ For the purposes of this tutorial, we will select the **Vault** Shader applicati
 At thid time, the list of available contracts is DAppnet. The majority of deployed contracts don't contain a contract description. These features will be adjusted with future iterations of DAppnet.
 {% endhint %}
 
-**Please download the Vault application Shader from our** [**Beam repository.** ](https://github.com/BeamMW/beam/tree/master/bvm/Shaders/vault)The Shader contract will not respond to CLI commands Shader can respond to CLI commands without the precompiled source code.
+**Please download the Vault application Shader from our** [**Beam repository.** ](https://github.com/BeamMW/beam/tree/master/bvm/Shaders/vault)The Shader contract will not respond to CLI commands without the precompiled source code.
 
-Download [`app.wasm`](https://github.com/BeamMW/beam/blob/master/bvm/Shaders/vault/app.wasm) and copy it to your `shader` folder. **Note**: if you are testing several applications, create a folder for each Shader application so each application contains a sperate `app.wasm` file.
+Download [`app.wasm`](https://github.com/BeamMW/beam/blob/master/bvm/Shaders/vault/app.wasm) and copy it to your `shader` folder. **Note**: if you are testing several applications, create a folder for each Shader application so each application contains a separate `app.wasm` file.
 
 ### Running Shader commands
 
@@ -134,9 +134,9 @@ Open as command line interface and change directory to the location of the CLI w
 
 First thing we will do is print the API of the contract by running the following command:
 
-`beam-wallet-dappnet.exe shader --shader_app_file vault\app.wasm`
-
-
+```
+beam-wallet-dappnet.exe shader --shader_app_file vault\app.wasm
+```
 
 Note that we only provide one parameter (--shader\_app\_file) since we assume all other parameters are set in the configuration file. We also provide a path to the application shader assuming it is located in the 'vault' folder.
 
