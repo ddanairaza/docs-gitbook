@@ -24,60 +24,58 @@ This will operation will install and build all the necessary components.
 
 ### Creating a new Shader Project
 
-1. Open a Developer Console and create a new folder for your Shader project. We will use 'vault' in our example
+1. Launch the Command Prompt, creating a new folder for your Shader project. We will use the `vault` folder for this tutorial:
 
 <figure><img src=".gitbook/assets/image (19).png" alt=""><figcaption></figcaption></figure>
 
-2\. Set the following environment variables to point to the location of you shader-sdk and wasi-sdk:
+2\. Locate `shader-sdk` and `wasi-sdk`folders, and enter the following:
 
 `set BEAM_SHADER_SDK=c:\Code\shader-sdk`
 
 `set WASI_SDK_PREFIX=C:\Code\shader-sdk\wasi-sdk-14.0`
 
-3\. Run the following command: `shade create_project <project name>`
+3. To initialize the structure of your Shader, enter  `shade create_project <project name>`:
 
-In our case:
+For our `<project name>`, use `vault`, i.e.,:
 
 `c:\Code\shader-sdk\shade create_project vault`
 
 <figure><img src=".gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
 
-This will initialize the structure of the Shader project, which should look as follows:
+If initialized correctly, your Shader project structure should resemble the following:
 
-<figure><img src=".gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (1).png" alt=""><figcaption><p>Vault project structure</p></figcaption></figure>
 
 
 
 ### Building the Shader Project
 
-In the Visual Studio, chose '**Open A Local Folder**' from the starter screen
+In Visual Studio, locate **Open A Local Folder** from the **Start** menu:
 
 <figure><img src=".gitbook/assets/image (23).png" alt=""><figcaption></figcaption></figure>
 
-Navigate to the project folder and clock 'Select Folder'. This will generate a CMake project. The end result should be visible in the Solution Explorer window and look like this:
+Navigate to your Shader project folder, click **Select Folder** to initialize a **CMake project**, creating `CMakeLists.txt` and `CMakeLists.json` files will be seen in the **Solution Explorer** for your Shader project:
 
-<figure><img src=".gitbook/assets/image (10).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (10).png" alt=""><figcaption><p>Vault Solution Explorer</p></figcaption></figure>
 
-Choose the wasm32-Release build configuration
+Select `wasm32-Release` build configuration:
 
 <figure><img src=".gitbook/assets/image (13).png" alt=""><figcaption></figcaption></figure>
 
-This will build the .wasm files which will be located in the following folder:
+This will build `.wasm` files following this folder structure:
 
 `C:\Code\vault\build\wasi\shaders`
 
-
-
 {% hint style="warning" %}
-In case something goes wrong with this step. Try the following before calling support:
+If you are encountering errors, try the following before reaching out to support:
 
-1. Delete the 'out' folder using Windows Explorer
-2. In the 'Project' menu, choose 'Delete Cache and Reconfigure'
-3. Rebuild the 'wasm32-Release'&#x20;
+1. Open Windows Explorer and delete the `out` folder.
+2. In the  **Project** menu, select **Delete Cache and Reconfigure.**
+3. Rebuild `wasm32-Release` project.
 {% endhint %}
 
 <figure><img src=".gitbook/assets/image (25).png" alt=""><figcaption></figcaption></figure>
 
 
 
-Now you are ready to start coding your Shader!
+You can begin coding your Shader project!
