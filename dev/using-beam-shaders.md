@@ -227,7 +227,7 @@ The output should resemble the following:
 
 <figure><img src=".gitbook/assets/image (17).png" alt=""><figcaption><p>View_accounts method</p></figcaption></figure>
 
-In the above example, there are currently no accounts within the contract. To create an account, utilizing the `deposit` method, we will deposit one Beam coin with the following command:
+In the above example, there are currently no accounts within the contract. To create an account, utilize `deposit` method and deposit one Beam coin with the following command:
 
 ```
 beam-wallet-dappnet.exe shader --shader_app_file vault\app.wasm --shader_args="cid=d9c5d1782b2d2b6f733486be480bb0d8bcf34d5fdc63bbac996ed76af541cc14,role=my_account,action=deposit,amount=100000000"
@@ -239,7 +239,7 @@ The above action creates and sends the transaction to the network (so it will ta
 
 <figure><img src=".gitbook/assets/image (5).png" alt=""><figcaption><p><code>Deposit</code> Method</p></figcaption></figure>
 
-The response generated (see below) claries the API response:
+The response generated (see below) clarfies the API response:
 
 <figure><img src=".gitbook/assets/image (18).png" alt=""><figcaption><p>Deposit successful</p></figcaption></figure>
 
