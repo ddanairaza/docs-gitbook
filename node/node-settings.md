@@ -3,7 +3,7 @@
 {% hint style="info" %}
 #### Commands entered via Command-line do not override the settings of your `beam-node.cfg` file.
 
-The `beam-node.cfg` file loads all the settings not dictated by the Command-line. To revert to the original settings of your`beam-node.cfg`file, manually restart your Beam mode.
+The `beam-node.cfg` file loads all the settings not dictated by the Command-line. To revert to the original settings of your`beam-node.cfg`file, manually restart your Beam node.
 {% endhint %}
 
 Users can adjust and configure node settings via the Command Line or by editing the`beam-node.cfg` file (located in the `node_folder`).
@@ -58,7 +58,7 @@ Beam uses an Equihash mining algorithm with (150,5) parameters and a customized 
 Make running your local node in fast sync mode easier with the following command:
 
 ```
-./beam-node --port=10000 --peer=eu-nodes.mainnet.beam.mw:8100,us-nodes.mainnet.beam.mw:8100,ap-nodes.mainnet.beam.mw:8100,ap-hk-nodes.mainnet.beam.mw:8100 --fast_sync=o
+./beam-node --port=10000 --peer=eu-nodes.mainnet.beam.mw:8100,us-nodes.mainnet.beam.mw:8100,ap-nodes.mainnet.beam.mw:8100,ap-hk-nodes.mainnet.beam.mw:8100 --fast_sync=on
 ```
 
 ![](<.gitbook/assets/image (2).png>)
