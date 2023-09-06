@@ -12,7 +12,7 @@ The article below will cover how to utilize Bridges to create cross-chain transa
 
 Now that your MetaMask wallet configuration is complete, it is time to create a transaction and test the Ethereum to Beam bridge!
 
-1. Launch the **DAppnet**<img src=".gitbook/assets/image (2).png" alt="" data-size="line"> **>>> "DApp store"**<img src=".gitbook/assets/image (1).png" alt="" data-size="line"> **>>> "Bridges app"**![](<.gitbook/assets/Screen Shot 2022-10-22 at 3.23.33 PM.png>).
+1. Launch the Bridge app from the DApp store in Beam Wallet **<img src=".gitbook/assets/image (2).png" alt="" data-size="line"> **>>> "DApp store"**<img src=".gitbook/assets/image (1).png" alt="" data-size="line"> **>>> "Bridges app"**![](<.gitbook/assets/Screen Shot 2022-10-22 at 3.23.33 PM.png>).
 2. Select **"Ethereum to Beam"**.
 3. Click **“Ethereum” from the drop-down currency list and select “AUTOMATIC WAY”** prompting a browser pop-up.
 4. In the browser, connect **MetaMask wallet**<img src=".gitbook/assets/Screen Shot 2022-10-22 at 1.45.13 PM.png" alt="" data-size="line">. Select **"Ethereum to Beam"** .
@@ -21,7 +21,7 @@ Now that your MetaMask wallet configuration is complete, it is time to create a 
 7. When the transaction is complete**, the bETH can now withdraw to your Beam Wallet**.
 8. Your new balance will be reflected in your Beam wallet!
 
-## How it looks in your wallet
+## How it looks in your Beam Wallet
 
 ### The Bridge app is located in the Beam Wallet DApp store
 
