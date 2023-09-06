@@ -1,8 +1,6 @@
 # Table of contents
 
 * [Beam Ethereum Bridges](README.md)
-* [Setting up MetaMask](setting-up-metamask.md)
-* [Setting up an Alchemy account](setting-up-an-alchemy-account.md)
 * [Creating Cross-chain transactions](creating-cross-chain-transactions.md)
 * [Joining the Beam community and Next Steps](joining-the-beam-community-and-next-steps.md)
 
