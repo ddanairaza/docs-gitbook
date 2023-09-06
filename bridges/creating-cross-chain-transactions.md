@@ -59,16 +59,15 @@ Enter the amount of Ethereum you wish to transfer and then select "transfer".
 
 Confirm the transaction details that appear in the MetaMask pop-up.&#x20;
 
-![](https://photos.app.goo.gl/iHLgCmQSrBUsLuza9)
+<figure><img src=".gitbook/assets/Screenshot 2566-09-06 at 15.52.45.png" alt=""><figcaption></figcaption></figure>
 
-#### Transaction Notification
+### Transaction Notification
 
 After the transaction is confirmed, a transaction notification will appear in the browser window.
 
 The transaction on the Ethereum side should take less than a minute depending on the network conditions. Click the activities tab in “MetaMask” to verify the completed transaction.
 
 The transaction takes between 1 and 5 minutes to complete on Beam blockchain. Check your Beam Wallet for the completed transaction.
-
 
 <figure><img src="https://lh6.googleusercontent.com/TcaedkPFT9N82sisCb7JNb8hVhTXLZVh3vV7VfUVlPVoGxT073Xuj1uLtYTZUMs3hURAY4MvehyVnHBJuvqZFtt-nTw6pD_-_X7H5deIy84XRYYOkCHnkpNiTOr5M-0GmkqodTRVudNrOhszVv8JnprXQ0v44FKjEp9T9Amc2V78Jix3CauE4wIxMw" alt=""><figcaption></figcaption></figure>
 
@@ -78,17 +77,17 @@ Once the transfer is complete, the bETH will be available to withdraw to your Be
 
 <figure><img src="https://lh6.googleusercontent.com/FQsa9lEL4BFvWzXfC43Tl26GwfSGmQcu5UkgVV7wgxNeudXzvPwXtYWQjDMGq4PHaF7WYQWFuMDfTilPNEmOD1j9U81SdMQkCVcyG_BahGyYj7tsf5CmHehFxCH42xeL3E78yyb69OCWwfVhXhKxY67nhNoa-RNsbiyQbJCen3XdDfYrODBqUgtaYA" alt=""><figcaption></figcaption></figure>
 
-#### Confirm withdraw
+### Confirm Withdraw
 
 <figure><img src="https://lh6.googleusercontent.com/-Rq4WedDW6P1XO34-Cx3I0dUyR-HSmJX4bF3b1xCTW7_ipk7JDV3KkTj4FQu5FNW365XitrCKM9BcFSZaVz8ZI8BNgkLMmIv6PvPkPuKDBjcr4q3OLHWFAyi0KclcfnQtX5CdR_It2TTGzr0J3JP_WEF6LdoJN3p9QdY3QqJmx52g_603QStOhVP5A" alt=""><figcaption></figcaption></figure>
 
-### Transaction complete
+### Transaction Completion
 
 After the transaction is complete, the new balance will be reflected directly in your Beam wallet.&#x20;
 
 <figure><img src="https://lh4.googleusercontent.com/Ydi4ModZUe-z_t9M8hkjWN1jkZOhy4kjRA_MzRkygIW6dRBIPd9wbehWLXKcStwYeMQd6c83YFZhpE9GT9teeGzhiAnQxur2hU3ek6mjNyvTAHkJIvpMeAgSdTQI4rFz3gVqQ-QLzpP9JlB9QVhjVUy6xbu8gSZg79wto4rk8UoKP2yF89kbK3V2Yg" alt=""><figcaption></figcaption></figure>
 
-#### Transaction details
+#### Transaction Details
 
 <figure><img src="https://lh4.googleusercontent.com/9bgNi1GN4TyQ6YyzP3gJ55WUUHtPzUqVSFJHLxKlhDNz0Vf-0FFaZp43xMBCwIBAyKgGRoAXeirKylcCWRyke73QdBGoKDsUGRO4NgpsJ9hJvxiutLwRL5SpWFB4ugspBGH10NDjRNtlOhP5A7QEPJjGjv4W2hBybEMxKkmPOcQKxDz1IxZOYNMi8w" alt=""><figcaption></figcaption></figure>
 
@@ -102,9 +101,9 @@ Create a transaction and test the Beam to Ethereum bridge!
 4. Return to Beam Wallet, **paste your Ethereum Bridge address** and enter the currency amount, transfer amount, and verify gas fees. **Select “transfer”.**
 5. Verify the transaction details. **"Confirm transfer"**. If no human or technical error occurred, the transaction will appear in both Beam and MetaMask wallets!
 
-## How it looks in your Beam Wallet
+## How it looks in Beam Wallet
 
-### DApp Store
+### Beam DApp Store
 
 Launch the DAPP in Beam Wallet and select the "Bridges app".&#x20;
 
