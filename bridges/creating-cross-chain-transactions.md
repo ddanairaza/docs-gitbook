@@ -12,7 +12,7 @@ The article below will cover how to utilize Bridges to create cross-chain transa
 
 Now that your MetaMask wallet configuration is complete, it is time to create a transaction and test the Ethereum to Beam bridge!
 
-1. Launch the **DAppnet**<img src=".gitbook/assets/image (2).png" alt="" data-size="line"> **>>> "DApp store"**<img src=".gitbook/assets/image (1).png" alt="" data-size="line"> **>>> "Bridges app"**![](<.gitbook/assets/Screen Shot 2022-10-22 at 3.23.33 PM.png>).
+1. Launch the Bridge app from the DApp store in Beam Wallet **<img src=".gitbook/assets/image (2).png" alt="" data-size="line"> **>>> "DApp store"**<img src=".gitbook/assets/image (1).png" alt="" data-size="line"> **>>> "Bridges app"**![](<.gitbook/assets/Screen Shot 2022-10-22 at 3.23.33 PM.png>).
 2. Select **"Ethereum to Beam"**.
 3. Click **“Ethereum” from the drop-down currency list and select “AUTOMATIC WAY”** prompting a browser pop-up.
 4. In the browser, connect **MetaMask wallet**<img src=".gitbook/assets/Screen Shot 2022-10-22 at 1.45.13 PM.png" alt="" data-size="line">. Select **"Ethereum to Beam"** .
@@ -21,11 +21,11 @@ Now that your MetaMask wallet configuration is complete, it is time to create a 
 7. When the transaction is complete**, the bETH can now withdraw to your Beam Wallet**.
 8. Your new balance will be reflected in your Beam wallet!
 
-## How it looks in your wallet
+## How it looks in your Beam Wallet
 
-### DAppnet Store
+### The Bridge app is located in the Beam Wallet DApp store
 
-Launch the DAPPnet and load the DApp store and select "Bridges app".&#x20;
+Launch the DApp Store in Beam Wallet and select the "Bridges app".&#x20;
 
 <figure><img src=".gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
@@ -102,21 +102,21 @@ Create a transaction and test the Beam to Ethereum bridge!
 4. Return to Beam Wallet, **paste your Ethereum Bridge address** and enter the currency amount, transfer amount, and verify gas fees. **Select “transfer”.**
 5. Verify the transaction details. **"Confirm transfer"**. If no human or technical error occurred, the transaction will appear in both Beam and MetaMask wallets!
 
-## How it looks in your wallet
+## How it looks in your Beam Wallet
 
-### DAppnet Store
+### DApp Store
 
-Launch the DAPPnet and load the DApp store and select "Bridges app".&#x20;
+Launch the DAPP in Beam Wallet and select the "Bridges app".&#x20;
 
 <figure><img src="https://lh6.googleusercontent.com/SSF9ap9-YzYT2ZCg-vUNpYl3r_wKiQdckQKhOWt0INItGhevfVW1RzbwVGMXXwYFRr5NO8BzN7QDEwnpQqbxK-77M_WZCzqdtHL_h2GZA19jfFBpUuOmBvETlSBqiuJ0YP4oPTQ-IGAwyP04I1p6MB5YHLJ4QJLHf9E_ty_T-ZMVl74P0bT_DTIKsw" alt=""><figcaption></figcaption></figure>
 
-### "Beam to ethereum"
+### "Beam to Ethereum"
 
-Click on "beam to ethereum" and in the next window click "ethereum side of the bride", prompting a browser pop-up to appear in chrome.
+Click on "Beam to Ethereum" and in the next window. Click "ethereum side of the bride", prompting a browser pop-up to appear in chrome.
 
 <figure><img src="https://lh3.googleusercontent.com/oYFSYb50FlTEAt2CWb1Dp4jmKczqjtWd-B6ko8PoTJau7QPoKWa8rE2Mw9NpmzK5-zwjYe6pjeywI2IBsYFuJc54BO0uo_XdvSO7GaWKYMMqq-dI9hdFstQc0SorqmKj-e3Gke72halqKPQrszK4q8mtIudXeOaXZwYSgm_flO1gWCCMkhQMubjghw" alt=""><figcaption></figcaption></figure>
 
-#### "ethereum side of the bridge"
+#### "Ethereum side of the bridge"
 
 <figure><img src="https://lh5.googleusercontent.com/ngSHZj_3j-lfAmPhJkJ1L-p3n-T04ZWZJMjjPVzCRfX4JRiy--2up3ju6ALhtyYfYhub43SKaHBkutmVjEYK17QBAgwI0HdGJWcU-YJeTDFXlMYlCV2nyAyxUWrZRlTQoI8eosvjs6b9beNLaWhAbRQA-Vhr-Sn2PT2xf9mbLaIEYxWT_Q6O5byGkg" alt=""><figcaption></figcaption></figure>
 
