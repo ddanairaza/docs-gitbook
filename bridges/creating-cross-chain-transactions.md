@@ -53,7 +53,7 @@ A pop-up browser will appear, allowing users to connect their MetaMask wallets. 
 
 Enter the amount of Ethereum you wish to transfer and then select "transfer".
 
-<figure><img src="https://photos.app.goo.gl/PWgtVyqQVmKfrbiPA" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/Screenshot 2566-09-06 at 15.51.19.png" alt=""><figcaption></figcaption></figure>
 
 ### **Confirm Transaction**
 
