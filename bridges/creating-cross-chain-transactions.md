@@ -23,9 +23,9 @@ Now that your MetaMask wallet configuration is complete, it is time to create a 
 
 ## How it looks in your wallet
 
-### DAppnet Store
+### The Bridge app is located in the Beam Wallet DApp store
 
-Launch the DAPPnet and load the DApp store and select "Bridges app".&#x20;
+Launch the DApp Store in Beam Wallet and select the "Bridges app".&#x20;
 
 <figure><img src=".gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
