@@ -49,21 +49,26 @@ A pop-up browser will appear, allowing users to connect their MetaMask wallets. 
 
 <figure><img src="https://lh3.googleusercontent.com/ziAkme6EyA_o72Hk11MQ2bS3GBzlEU95ii288DIsQ3uq0fftGhWJp4AeZmR3Ji6er7Ri4KH93-q2zRCL4_bOvEU4DIDSKMy_6EZPsyRGwAimAdkrYejhNRJQ78GgTeHGN4dJe8u9pgNO20fvGYZJRN1hTy7zBuexrFUG4TMMcAY0QeK3LkxK_3eYYQ" alt=""><figcaption></figcaption></figure>
 
-### Create a transfer
+### Creating a transfer
 
 Enter the amount of Ethereum you wish to transfer and then select "transfer".
 
-<figure><img src="https://lh4.googleusercontent.com/byuO7-1CpCZoM126qEa_YDYUjxCvBIenTZE5-sb5cTj5hrF37JD53wVjj7TZBc9VKLybcb6sCp-eBRTEBSFqZ-bO6pygaj_EwKIb184xUkdJkqoRkZRqPzuTOzu_jKmQdQ1sWYQ20Tr95AJwYLdSgkOt-YbcG6RKmosuTrDw0IdCYvopFP3Hfw_Hyw" alt=""><figcaption></figcaption></figure>
+<figure><img src="https://photos.app.goo.gl/PWgtVyqQVmKfrbiPA" alt=""><figcaption></figcaption></figure>
 
-### **Confirm transaction**
+### **Confirm Transaction**
 
 Confirm the transaction details that appear in the MetaMask pop-up.&#x20;
 
-![](https://lh4.googleusercontent.com/OnaHK8CoSEeweMyfb31QU09vKMBKOHNMdIrgnDswTpc0xgv2lIKxJ56iFB85c2UT8myoT2v8G8oJ10M8NhgGhbvTEoqR3PGhcq8wVDAZCGwiWPeORB3FLzxBikMdaftcW0fJ6bZ4fDDHle1Gu8HkqwtdCYNPTkTkgz5ogEdfGxjFvR5uKweKbs5Iqg)
+![](https://photos.app.goo.gl/iHLgCmQSrBUsLuza9)
 
-#### Transaction notification
+#### Transaction Notification
 
 After the transaction is confirmed, a transaction notification will appear in the browser window.
+
+The transaction on the Ethereum side should take less than a minute depending on the network conditions. Click the activities tab in “MetaMask” to verify the completed transaction.
+
+The transaction takes between 1 and 5 minutes to complete on Beam blockchain. Check your Beam Wallet for the completed transaction.
+
 
 <figure><img src="https://lh6.googleusercontent.com/TcaedkPFT9N82sisCb7JNb8hVhTXLZVh3vV7VfUVlPVoGxT073Xuj1uLtYTZUMs3hURAY4MvehyVnHBJuvqZFtt-nTw6pD_-_X7H5deIy84XRYYOkCHnkpNiTOr5M-0GmkqodTRVudNrOhszVv8JnprXQ0v44FKjEp9T9Amc2V78Jix3CauE4wIxMw" alt=""><figcaption></figcaption></figure>
 
