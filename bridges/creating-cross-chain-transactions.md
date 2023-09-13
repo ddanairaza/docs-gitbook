@@ -10,7 +10,7 @@ This article will cover how to utilize Beam Bridge to create cross-chain transac
 Once your MetaMask Wallet configuration is complete, it is time to bridge assets from Ethereum to Beam blockchain!
 
 1. Launch the Bridges app from the DApp store in Beam Wallet <img src=".gitbook/assets/image (2).png" alt="" data-size="line"> **>>> DApp store**<img src=".gitbook/assets/image (1).png" alt="" data-size="line"> **>>> Bridges app**![](<.gitbook/assets/Screen Shot 2022-10-22 at 3.23.33 PM.png>).
-2. Select **"Ethereum to Beam"**.
+2. Select **Ethereum to Beam**.
 3. Select **“bETH (id:36)” from the drop-down currency list and select “AUTOMATIC WAY”** prompting a browser pop-up. _(Always double-check a token's asset ID. Multiple tokens can have identical names, but their asset IDs always remain unique.)_
 4. In the browser, connect your **MetaMask Wallet**<img src=".gitbook/assets/Screen Shot 2022-10-22 at 1.45.13 PM.png" alt="" data-size="line">. Select **"Ethereum to Beam"**.
 5. When bridging tokens other than ETH, users must "approve token" to enable them for cross-chain transfers to Beam (this process only needs to be done once).
@@ -27,11 +27,11 @@ Launch the DApp Store in Beam Wallet and select the "Bridges app".&#x20;
 
 <figure><img src=".gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
-### **"Ethereum to Beam"**
+### **Ethereum to Beam**
 
 <figure><img src="https://lh6.googleusercontent.com/hrDVtaVjBTAchhJiun9vaUkYTWdqPS4RHrVIIEI9JH5_lRBiB7A1ER0ZhB5GKf7V-4WghomOgV0b848l1PKafCIVvucLx-kmoP_yIIpDX9vMIFJ3HB3cbzTtnDiYwKHMpJuL6RcgsOPvhHkw3CH0OHIOFoGU-Wna7XyUgsGVsYoWIhE6cskMbtg6dg" alt=""><figcaption></figcaption></figure>
 
-### **"Ethereum" and the "AUTOMATIC WAY"**
+### **Ethereum and the AUTOMATIC WAY**
 
 Select Ethereum from the list of currencies in the dropdown menu.
 
@@ -77,7 +77,7 @@ Once the transfer is complete, the bETH will be available to withdraw from the B
 
 ### Confirm Withdrawal
 
-<figure><img src="https://lh6.googleusercontent.com/-Rq4WedDW6P1XO34-Cx3I0dUyR-HSmJX4bF3b1xCTW7_ipk7JDV3KkTj4FQu5FNW365XitrCKM9BcFSZaVz8ZI8BNgkLMmIv6PvPkPuKDBjcr4q3OLHWFAyi0KclcfnQtX5CdR_It2TTGzr0J3JP_WEF6LdoJN3p9QdY3QqJmx52g_603QStOhVP5A" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/Withdrawing v2.png" alt=""><figcaption></figcaption></figure>
 
 ### Transaction Completion
 
