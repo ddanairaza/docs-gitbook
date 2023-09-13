@@ -1,29 +1,27 @@
 # Creating cross-chain Transactions
 
-The article below will cover how to utilize Beam Bridge to create cross-chain transactions from [**Ethereum to Beam**](creating-cross-chain-transactions.md#send-usdeth-from-ethereum-to-beam) and [**Beam to Ethereum**](creating-cross-chain-transactions.md#send-usdbeth-from-beam-to-ethereum). The steps below provide a foundation for completing cross-chain transactions with all supported tokens, which include:
+This article will cover how to utilize Beam Bridge to create cross-chain transactions between **Ethereum to Beam** and **Beam to Ethereum**. This step-by-step tutorial provides a foundation for completing cross-chain transactions with all supported tokens including:
 
-* $ETH
-* $USDT
-* $DAI
-* $WBTC, $bETH on Ethereum.&#x20;
-* $bUSDT, $bDAI, $bWTC on Beam.&#x20;
+* $ETH, $USDT, $DAI, $WBTC on Ethereum.
+* $bETH, $bUSDT, $bDAI, $bWTC on Beam.
 
 ## **Send $ETH from Ethereum to Beam**
 
-Now that your MetaMask wallet configuration is complete, it is time to create a cross-chain transaction from Ethereum to Beam blockchain!
+Once your MetaMask Wallet configuration is complete, it is time to bridge assets from Ethereum to Beam blockchain!
 
-1. Launch the Bridge app from the DApp store in Beam Wallet **<img src=".gitbook/assets/image (2).png" alt="" data-size="line"> **>>> "DApp store"**<img src=".gitbook/assets/image (1).png" alt="" data-size="line"> **>>> "Bridges app"**![](<.gitbook/assets/Screen Shot 2022-10-22 at 3.23.33 PM.png>).
+1. Launch the Bridges app from the DApp store in Beam Wallet <img src=".gitbook/assets/image (2).png" alt="" data-size="line"> **>>> DApp store**<img src=".gitbook/assets/image (1).png" alt="" data-size="line"> **>>> Bridges app**![](<.gitbook/assets/Screen Shot 2022-10-22 at 3.23.33 PM.png>).
 2. Select **"Ethereum to Beam"**.
-3. Click **“Ethereum” from the drop-down currency list and select “AUTOMATIC WAY”** prompting a browser pop-up.
-4. In the browser, connect **MetaMask wallet**<img src=".gitbook/assets/Screen Shot 2022-10-22 at 1.45.13 PM.png" alt="" data-size="line">. Select **"Ethereum to Beam"** .
-5. Enter the transfer amount. **Click "transfer".**&#x20;
-6. **Confirm the transaction** in a MetaMask pop-up. A transaction notification will appear in the browser.
-7. When the transaction is complete**, the bETH can now withdraw to your Beam Wallet**.
-8. Your new balance will be reflected in your Beam wallet!
+3. Select **“bETH (id:36)” from the drop-down currency list and select “AUTOMATIC WAY”** prompting a browser pop-up. _(Always double-check a token's asset ID. Multiple tokens can have identical names, but their asset IDs always remain unique.)_
+4. In the browser, connect your **MetaMask Wallet**<img src=".gitbook/assets/Screen Shot 2022-10-22 at 1.45.13 PM.png" alt="" data-size="line">. Select **"Ethereum to Beam"**.
+5. When bridging tokens other than ETH, users must "approve token" to enable them for cross-chain transfers to Beam (this process only needs to be done once).
+6. Enter the transfer amount. **Click "transfer".**&#x20;
+7. A pop-up will open up in your MetaMask Wallet to "Confirm the transaction". A transaction notification will appear in the browser.
+8. When the transaction is complete (it might take a few minutes), your bETH can be withdrawn to your Beam Wallet.
+9. Your new balance will also be reflected in your Beam wallet!
 
 ## How it looks in your Beam Wallet
 
-### The Bridge app is located in the Beam Wallet DApp store
+### The Bridges app is located in the Beam Wallet DApp store
 
 Launch the DApp Store in Beam Wallet and select the "Bridges app".&#x20;
 
@@ -41,7 +39,7 @@ Select Ethereum from the list of currencies in the dropdown menu.
 
 ### Connect MetaMask and establish Ethereum to Beam Bridge
 
-A pop-up browser will appear, allowing users to connect their MetaMask wallets. Select "Etheerum to Beam Bridge".
+A pop-up browser will appear, allowing users to connect their MetaMask wallets. Select "Ethereum to Beam Bridge".
 
 <figure><img src="https://lh6.googleusercontent.com/8ew1vOAODglmJ4NXZZqmP7rI2-HkjcFBnA9Cmbi8FxBGwj6NVpBgx2OstKgvLTd2g2EFy8tHLPsRzwFYfB4ogjMK0nem_d-jtOAoprWFwvit2L3Ra_jG2hpzIvL5i7wEAR0AwtQ88FdFfEdOGVg1gCYaDVfU41rzgqD5Ra_ROwx6ccejmeN-X6VO1A" alt=""><figcaption></figcaption></figure>
 
@@ -73,7 +71,7 @@ The transaction takes between 1 and 5 minutes to complete on Beam blockchain. Ch
 
 ### Withdraw bETH to Beam wallet
 
-Once the transfer is complete, the bETH will be available to withdraw to your Beam wallet.
+Once the transfer is complete, the bETH will be available to withdraw from the Bridges app into your Beam wallet.
 
 <figure><img src="https://lh6.googleusercontent.com/FQsa9lEL4BFvWzXfC43Tl26GwfSGmQcu5UkgVV7wgxNeudXzvPwXtYWQjDMGq4PHaF7WYQWFuMDfTilPNEmOD1j9U81SdMQkCVcyG_BahGyYj7tsf5CmHehFxCH42xeL3E78yyb69OCWwfVhXhKxY67nhNoa-RNsbiyQbJCen3XdDfYrODBqUgtaYA" alt=""><figcaption></figcaption></figure>
 
@@ -91,15 +89,15 @@ After the transaction is complete, the new balance will be reflected directly in
 
 <figure><img src="https://lh4.googleusercontent.com/9bgNi1GN4TyQ6YyzP3gJ55WUUHtPzUqVSFJHLxKlhDNz0Vf-0FFaZp43xMBCwIBAyKgGRoAXeirKylcCWRyke73QdBGoKDsUGRO4NgpsJ9hJvxiutLwRL5SpWFB4ugspBGH10NDjRNtlOhP5A7QEPJjGjv4W2hBybEMxKkmPOcQKxDz1IxZOYNMi8w" alt=""><figcaption></figcaption></figure>
 
-## **Send $bETH from Beam to Ethereum**
+## **Sending back $bETH from Beam to Ethereum**
 
-Conducting cross-chain transactions from Beam to Ethereum blockchain!
+Now let's focus on conducting cross-chain transactions to send back bETH (id:36) from Beam to Ethereum!
 
-1. Launch the "Bridge app" from the DApp Store in Beam Wallet <img src=".gitbook/assets/image (2).png" alt="" data-size="line"> **>>> "DApp store"**<img src=".gitbook/assets/image (1).png" alt="" data-size="line"> **>>> "Bridges app"**![](<.gitbook/assets/Screen Shot 2022-10-22 at 3.23.33 PM.png>).
-2. Select **"Beam to Ethereum" >>>** click **"Ethereum side of the bridge”** prompting a browser pop-up.
-3. In the browser, connect MetaMask wallet. **Copy**![](<.gitbook/assets/Screen Shot 2022-10-22 at 3.27.49 PM.png>) **Ethereum bridge address**.
-4. Return to Beam Wallet, **paste your Ethereum Bridge address** and select the currency amount, transfer amount, and verify gas fees. **Select “Transfer”.**
-5. Verify the transaction details. **"Confirm Transfer"**. If no human or technical error occurred, the transaction will appear in both Beam and MetaMask wallets!
+1. Launch the Bridges app from the DApp Store in Beam Wallet <img src=".gitbook/assets/image (2).png" alt="" data-size="line"> >>> DApp store<img src=".gitbook/assets/image (1).png" alt="" data-size="line"> >>> Bridges app![](<.gitbook/assets/Screen Shot 2022-10-22 at 3.23.33 PM.png>).
+2. Select **"Beam to Ethereum"** >>> click **"Ethereum side of the bridge”** prompting a browser pop-up.
+3. In the browser, connect your MetaMask wallet and then copy the Ethereum bridge address that is provided there.
+4. Return to Beam Wallet, **paste your Ethereum Bridge address**, select the currency amount, and transfer amount, and verify gas fees. **Select “Transfer”.**
+5. Verify the transaction details. **"Confirm Transfer"**.
 
 ## How it looks in Beam Wallet
 
@@ -111,7 +109,7 @@ Launch the DApp in Beam Wallet and select the "Bridges app".&#x20;
 
 ### Beam to Ethereum
 
-Click on "Beam to Ethereum" and in the next window. Click "ethereum side of the bride", prompting a browser pop-up to appear in chrome.
+Click on "Beam to Ethereum" in the next window. Click "Ethereum side of the bride", prompting a browser pop-up to appear in your browser.
 
 <figure><img src="https://lh3.googleusercontent.com/oYFSYb50FlTEAt2CWb1Dp4jmKczqjtWd-B6ko8PoTJau7QPoKWa8rE2Mw9NpmzK5-zwjYe6pjeywI2IBsYFuJc54BO0uo_XdvSO7GaWKYMMqq-dI9hdFstQc0SorqmKj-e3Gke72halqKPQrszK4q8mtIudXeOaXZwYSgm_flO1gWCCMkhQMubjghw" alt=""><figcaption></figcaption></figure>
 
@@ -121,19 +119,19 @@ Click on "Beam to Ethereum" and in the next window. Click "ethereum side of the 
 
 ### Ethereum to Beam Bridge
 
-In the browser, connect MetaMask wallet and copy the Ethereum Bridge address.
+In the browser, connect the MetaMask wallet and copy the Ethereum Bridge address.
 
 <figure><img src="https://lh5.googleusercontent.com/Y9ULUJng1sO7y4QRZdXnTIgrlIFjmTR4V1shZZYfhTQ31w2nfYfWYamg_RK7q3nACSGO-TlJVPcS5i4MLIxoXoqc7ENZFPU0ebYSOAKgZs-kY-34Glko1epBbTdtX11DadXPpMGojcKgD11Kd-kl27ABA6tdKCWAjH-7W8FVsPn6tqXpfzMceU8jFA" alt=""><figcaption></figcaption></figure>
 
 ### Select Token and Transfer Amount
 
-Enter the amount of Beam you wish to send. Verify all transaction details before completing the transfer.
+Enter the amount of bETH you wish to send. Verify all transaction details before completing the transfer.
 
 <figure><img src="https://lh6.googleusercontent.com/n7elaiPvEFhN1POcl_dLtUBg9vu0PYK_BURHQbuv2XMJxwaSAUGd9rYxMbnMMzCKV1-Tqi7si0FmpfpA80pXM4Hp1h5sx9hM5D3PC_qTdo7DraKJmZZbvOprIwQMiYi4EDIh4dT1s4_0I_LfQX7XHFF7N1pa0V57ebA9M0gd2ZzbQzON5TdYgdhEpA" alt=""><figcaption></figcaption></figure>
 
 ### Confirm Transaction Details
 
-Verify all the details of the before completing the transaction.
+Double-check all transaction details before completing any transaction.
 
 &#x20;
 
