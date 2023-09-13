@@ -1,7 +1,7 @@
 # Table of Contents
 
 * [The Beam Bridge](README.md)
-* [Creating Cross-chain transactions](creating-cross-chain-transactions.md)
+* [Creating cross-chain transactions](creating-cross-chain-transactions.md)
 * [Join the Beam community and Next Steps](joining-the-beam-community-and-next-steps.md)
 
 # Additional Documentation
