@@ -83,7 +83,7 @@ Once the transfer is complete, the bETH will be available to withdraw from the B
 
 After the transaction is complete, the new balance will be reflected directly in your Beam wallet.&#x20;
 
-<figure><img src="https://lh4.googleusercontent.com/Ydi4ModZUe-z_t9M8hkjWN1jkZOhy4kjRA_MzRkygIW6dRBIPd9wbehWLXKcStwYeMQd6c83YFZhpE9GT9teeGzhiAnQxur2hU3ek6mjNyvTAHkJIvpMeAgSdTQI4rFz3gVqQ-QLzpP9JlB9QVhjVUy6xbu8gSZg79wto4rk8UoKP2yF89kbK3V2Yg" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/14 Beam Wallet done v2.png" alt=""><figcaption></figcaption></figure>
 
 #### Transaction Details
 
