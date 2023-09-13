@@ -1,6 +1,6 @@
 ---
 Description: >-
-  The Beam Bridge is a decentralized non-custodial bridge between Beam and Ethereum blockchain that enables seamless cross-chain crypto asset transfers.
+  The Beam Bridge is a non-custodial bridge between Beam and Ethereum blockchain that enables seamless cross-chain crypto asset transfers.
 ---
 
 # The Beam Bridge
