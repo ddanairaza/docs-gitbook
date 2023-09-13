@@ -73,7 +73,7 @@ The transaction takes between 1 and 5 minutes to complete on Beam blockchain. Ch
 
 Once the transfer is complete, the bETH will be available to withdraw from the Bridges app into your Beam wallet.
 
-<figure><img src="https://lh6.googleusercontent.com/FQsa9lEL4BFvWzXfC43Tl26GwfSGmQcu5UkgVV7wgxNeudXzvPwXtYWQjDMGq4PHaF7WYQWFuMDfTilPNEmOD1j9U81SdMQkCVcyG_BahGyYj7tsf5CmHehFxCH42xeL3E78yyb69OCWwfVhXhKxY67nhNoa-RNsbiyQbJCen3XdDfYrODBqUgtaYA" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/Withdraw beth.png" alt=""><figcaption></figcaption></figure>
 
 ### Confirm Withdrawal
 
