@@ -35,7 +35,7 @@ Launch the DApp Store in Beam Wallet and select the "Bridges app".&#x20;
 
 Select Ethereum from the list of currencies in the dropdown menu.
 
-<figure><img src="https://lh6.googleusercontent.com/AytQTa3vZiifPRFKCAPVrfpoXuPKMueVkbvWhXz0_GBsHcXfTiTLmMnqyVBdlBfcGBEOiV5-rvvn7uo1lHLdySfseWPBdNtSX3nWc8IsSXC5WBN2b5sEKmLPkQPSILkmW1zNfuftE39pgFz1L6FPM31BP6sqYgSy8UnyOkRB2AxbEcSipqA3FvmY0g" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/Token selection v2.png" alt=""><figcaption></figcaption></figure>
 
 ### Connect MetaMask and establish Ethereum to Beam Bridge
 
