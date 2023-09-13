@@ -87,7 +87,7 @@ After the transaction is complete, the new balance will be reflected directly in
 
 #### Transaction Details
 
-<figure><img src="https://lh4.googleusercontent.com/9bgNi1GN4TyQ6YyzP3gJ55WUUHtPzUqVSFJHLxKlhDNz0Vf-0FFaZp43xMBCwIBAyKgGRoAXeirKylcCWRyke73QdBGoKDsUGRO4NgpsJ9hJvxiutLwRL5SpWFB4ugspBGH10NDjRNtlOhP5A7QEPJjGjv4W2hBybEMxKkmPOcQKxDz1IxZOYNMi8w" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/15 Beam Wallet transaction details.png" alt=""><figcaption></figcaption></figure>
 
 ## **Sending back $bETH from Beam to Ethereum**
 
