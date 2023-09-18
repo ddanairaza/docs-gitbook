@@ -1,17 +1,13 @@
-# Table of contents
+# Table of Contents
 
-* [Beam Ethereum Bridges](README.md)
-* [Creating Cross-chain transactions](creating-cross-chain-transactions.md)
-* [Joining the Beam community and Next Steps](joining-the-beam-community-and-next-steps.md)
+* [The Beam Bridge](README.md)
+* [Creating cross-chain transactions](creating-cross-chain-transactions.md)
+* [Join the Beam community and Next Steps](joining-the-beam-community-and-next-steps.md)
 
-## Additional Documentation
+# Additional Documentation
 
 * [Beam Desktop Wallet Guide](https://beamx.gitbook.io/desktop-wallet-user-guide/)
-* [DAppNet User Guide](https://beamx.gitbook.io/dappnet-user-guide/)
-* [Mobile Wallet User Guide](https://beamx.gitbook.io/mobile-wallet-user-guide/)
-* [Web Wallet (Masternet) Guide](https://beamx.gitbook.io/web-wallet-masternet/)
-
-***
-
+* [Beam Mobile Wallet Guide](https://beamx.gitbook.io/mobile-wallet-user-guide/)
+* [Beam Web Wallet Guide](https://beamx.gitbook.io/web-wallet-masternet/)
 * [Beam Documentation Portal](https://documentation.beam.mw/)
 * [Beam GitHub](https://github.com/BeamMW)
