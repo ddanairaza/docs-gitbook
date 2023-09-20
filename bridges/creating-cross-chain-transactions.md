@@ -127,7 +127,7 @@ In the browser, connect the MetaMask wallet and copy the Ethereum Bridge address
 
 Enter the amount of bETH you wish to send. Verify all transaction details before completing the transfer.
 
-<figure><img src="https://lh6.googleusercontent.com/n7elaiPvEFhN1POcl_dLtUBg9vu0PYK_BURHQbuv2XMJxwaSAUGd9rYxMbnMMzCKV1-Tqi7si0FmpfpA80pXM4Hp1h5sx9hM5D3PC_qTdo7DraKJmZZbvOprIwQMiYi4EDIh4dT1s4_0I_LfQX7XHFF7N1pa0V57ebA9M0gd2ZzbQzON5TdYgdhEpA" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/Beam to Ethereum.png" alt=""><figcaption></figcaption></figure>
 
 ### Confirm Transaction Details
 
