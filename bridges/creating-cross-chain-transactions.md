@@ -1,6 +1,6 @@
 # Creating cross-chain Transactions
 
-This article will cover how to utilize Beam Bridge to create cross-chain transactions between **Ethereum to Beam** and **Beam to Ethereum**. This step-by-step tutorial provides a foundation for completing cross-chain transactions with all supported tokens including:
+This article will cover how to utilize Beam Bridge to create cross-chain transactions between **Ethereum to Beam**. This step-by-step tutorial provides a foundation for completing cross-chain transactions with all supported tokens including:
 
 * $ETH, $USDT, $DAI, $WBTC on Ethereum.
 * $bETH, $bUSDT, $bDAI, $bWTC on Beam.
